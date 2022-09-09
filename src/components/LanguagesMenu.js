@@ -10,7 +10,7 @@ const LanguagesMenu = ({ title }) => {
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
           }}
         >

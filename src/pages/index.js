@@ -2,7 +2,10 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
 
+import Menu from "../components/Menu.js";
 import LanguagesMenu from "../components/LanguagesMenu.js";
+import SocialProfileWithImage from "../components/AvaliationsCard.js";
+import Footer from "../components/Footer.js";
 
 // import Layout from "../components/layout";
 // import Image from "../components/image";
@@ -13,6 +16,8 @@ const IndexPage = () => {
 
   return (
     <>
+      <Menu></Menu>
+      <SocialProfileWithImage></SocialProfileWithImage>
       <h1>
         <LanguagesMenu title="Choose Language" />
       </h1>
@@ -29,6 +34,7 @@ const IndexPage = () => {
       <Link to="/page-2/">
         <Trans>Go to page 2</Trans>
       </Link>
+      <Footer></Footer>
     </>
   );
 };
