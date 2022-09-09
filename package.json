@@ -1,8 +1,8 @@
 {
-  "name": "gatsby_localization",
+  "name": "berlezi.rodolfo.bookshelf",
   "version": "1.0.0",
   "private": true,
-  "description": "gatsby_localization",
+  "description": "Personal author's page made with Gatsby ;)",
   "author": "Rodolfo Berlezi",
   "keywords": [
     "gatsby"

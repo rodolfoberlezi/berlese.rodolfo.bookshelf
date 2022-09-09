@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `gatsby_localization`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `berlezi.rodolfo.bookshelf`,
+    siteUrl: `http://www.rodolfoberlezi.com.br`,
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -32,13 +32,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
-        localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
+        localeJsonSourceName: `locale`,
         languages: [`en`, `pt`],
-        defaultLanguage: `en`,
+        defaultLanguage: `pt`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `https://example.com`,
-        // if you are using trailingSlash gatsby config include it here, as well (the default is 'always')
-        trailingSlash: "always",
+        siteUrl: `http://www.rodolfoberlezi.com.br`,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
@@ -51,11 +49,6 @@ module.exports = {
           {
             matchPath: "/:lang?/blog/:uid",
             getLanguageFromPath: true,
-            excludeLanguages: ["es"],
-          },
-          {
-            matchPath: "/preview",
-            languages: ["en"],
           },
         ],
       },
