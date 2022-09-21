@@ -2,10 +2,12 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
 
-import Menu from "../components/Menu.js";
 import LanguagesMenu from "../components/LanguagesMenu.js";
 import SocialProfileWithImage from "../components/AvaliationsCard.js";
-import Footer from "../components/Footer.js";
+import TranslatedLabel from "../components/TranslatedLabel";
+import HeaderLogo from "../components/HeaderLogo.js";
+import Menu from "../components/Menu.js";
+import Footer from "../assets/Footer.js";
 
 // import Layout from "../components/layout";
 // import Image from "../components/image";
@@ -16,13 +18,14 @@ const IndexPage = () => {
 
   return (
     <>
+      <HeaderLogo></HeaderLogo>
       <Menu></Menu>
       <SocialProfileWithImage></SocialProfileWithImage>
       <h1>
         <LanguagesMenu title="Choose Language" />
       </h1>
       <h1>
-        <Trans>Hi people</Trans>
+        <TranslatedLabel text={"Hi people"}></TranslatedLabel>
       </h1>
       <p>
         <Trans>Welcome to your new Gatsby site.</Trans>
@@ -31,7 +34,7 @@ const IndexPage = () => {
         <Trans>Now go build something great.</Trans>
       </p>
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
-      <Link to="/page-2/">
+      <Link to="/sobre/">
         <Trans>Go to page 2</Trans>
       </Link>
       <Footer></Footer>

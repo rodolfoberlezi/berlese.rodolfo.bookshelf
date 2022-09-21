@@ -80,7 +80,7 @@ const Menu = () => {
             variant={"link"}
             href={"#"}
           >
-            Sign In
+            Choose Language
           </Button>
           <Button
             display={{ base: "none", md: "inline-flex" }}
@@ -93,7 +93,7 @@ const Menu = () => {
               bg: "pink.300",
             }}
           >
-            Sign Up
+            Assine a Newsletter
           </Button>
         </Stack>
       </Flex>
@@ -260,41 +260,26 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Inspiration",
-    children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
-      },
-    ],
-  },
-  {
-    label: "Find Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
-  },
-  {
-    label: "Learn Design",
+    label: "Sobre o Autor",
     href: "#",
   },
   {
-    label: "Hire Designers",
+    label: "Livros e Sagas",
+    children: [
+      {
+        label: "POWER HEART",
+        subLabel:
+          "Mercenários e seres exilados contra algozes. A liberdade e os poderes do coração e da alma esta em jogo.",
+        href: "#",
+      },
+    ],
+  },
+  {
+    label: "Contato",
+    href: "#",
+  },
+  {
+    label: "Apoiadores",
     href: "#",
   },
 ];
