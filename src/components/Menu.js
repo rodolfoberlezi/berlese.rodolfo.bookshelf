@@ -6,8 +6,10 @@ import {
   IconButton,
   Button,
   Stack,
+  Center,
   Collapse,
   Icon,
+  Image,
   Link,
   Popover,
   PopoverTrigger,
@@ -22,6 +24,7 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+import rbLogo from "../images/header/rb-circle.png";
 
 const Menu = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -53,14 +56,11 @@ const Menu = () => {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
+
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
-          >
-            Logo
-          </Text>
+          <Center>
+            <Image boxSize="50px" src={rbLogo}></Image>
+          </Center>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
@@ -113,7 +113,7 @@ const DesktopNav = () => {
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
+        <Box key={navItem.label} paddingTop={3}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
