@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "@chakra-ui/react";
 import { Trans } from "gatsby-plugin-react-i18next";
 
-const Characters = ({ text }) => {
+const CollectionBooks = ({ text }) => {
   return (
     <Text>
       <Trans>{text}</Trans>
@@ -10,4 +10,4 @@ const Characters = ({ text }) => {
   );
 };
 
-export default Characters;
+export default CollectionBooks;

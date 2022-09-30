@@ -2,7 +2,7 @@ import React from "react";
 import { Text } from "@chakra-ui/react";
 import { Trans } from "gatsby-plugin-react-i18next";
 
-const Apresentation = ({ text }) => {
+const Video = ({ text }) => {
   return (
     <Text>
       <Trans>{text}</Trans>
@@ -10,4 +10,4 @@ const Apresentation = ({ text }) => {
   );
 };
 
-export default Apresentation;
+export default Video;

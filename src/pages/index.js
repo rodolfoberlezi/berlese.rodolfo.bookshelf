@@ -2,12 +2,14 @@ import React from "react";
 import { graphql } from "gatsby";
 import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
 
-import LanguagesMenu from "../components/LanguagesMenu.js";
-import SocialProfileWithImage from "../components/AvaliationsCard.js";
-import TranslatedLabel from "../components/TranslatedLabel";
 import Header from "../assets/Header.js";
-import Footer from "../assets/Footer.js";
 import Body from "../assets/Body.js";
+import Footer from "../assets/Footer.js";
+
+import TranslatedLabel from "../components/TranslatedLabel";
+import AvaliationCards from "../components/AvaliationCards.js";
+import AuthorApresentation from "../components/AuthorApresentation.js";
+import SocialNetworks from "../components/SocialNetworks.js";
 
 const IndexPage = () => {
   const { t } = useTranslation();
@@ -16,22 +18,29 @@ const IndexPage = () => {
     <>
       <Header></Header>
       <Body>
-        <SocialProfileWithImage></SocialProfileWithImage>
-        <h1>
-          <LanguagesMenu title="Choose Language" />
-        </h1>
         <h1>
           <TranslatedLabel text={"Hi people"}></TranslatedLabel>
         </h1>
         <p>
-          <Trans>Welcome to your new Gatsby site.</Trans>
+          <TranslatedLabel
+            text={"Welcome to your new Gatsby site."}
+          ></TranslatedLabel>
         </p>
         <p>
-          <Trans>Now go build something great.</Trans>
+          <TranslatedLabel
+            text={"Now go build something great."}
+          ></TranslatedLabel>
         </p>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
+
+        <AvaliationCards></AvaliationCards>
+
+        <AuthorApresentation></AuthorApresentation>
+
+        <SocialNetworks></SocialNetworks>
+
         <Link to="/sobre/">
-          <Trans>Go to page 2</Trans>
+          <TranslatedLabel text={"Go to page 2"}></TranslatedLabel>
         </Link>
       </Body>
       <Footer></Footer>

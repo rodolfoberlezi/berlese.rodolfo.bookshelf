@@ -12,7 +12,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-export default function SocialProfileWithImage() {
+export default function AvaliationCards() {
   return (
     <Center py={6}>
       <Box
