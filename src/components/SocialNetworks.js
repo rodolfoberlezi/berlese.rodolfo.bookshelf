@@ -8,7 +8,20 @@ const SocialNetworks = ({
   marginAround = "5",
 }) => {
   return (
-    <Flex direction={directionFlow} justifyContent="space-around">
+    <Flex
+      minWidth={150}
+      minH={{
+        base: "150",
+        sm: "50",
+      }}
+      flexDir={{
+        base: "column",
+        sm: "row",
+      }}
+      direction={directionFlow}
+      align="center"
+      justifyContent="space-between"
+    >
       <Link
         href="https://www.facebook.com/rodolfopowerheart/"
         margin={directionFlow !== "row" ? marginAround : "0"}

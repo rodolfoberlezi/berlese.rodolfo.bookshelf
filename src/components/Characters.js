@@ -1,12 +1,18 @@
 import React from "react";
 import { Text } from "@chakra-ui/react";
-import { Trans } from "gatsby-plugin-react-i18next";
 
-const Characters = ({ text }) => {
+const Characters = () => {
   return (
-    <Text>
-      <Trans>{text}</Trans>
-    </Text>
+    <Box>
+      <h3>Personagens</h3>
+      <Flex>
+        <Box>
+          <Text>Olexa</Text>
+          <Text>Mercenária - Controladora</Text>
+          <Text>Nascida em...</Text>
+        </Box>
+      </Flex>
+    </Box>
   );
 };
 

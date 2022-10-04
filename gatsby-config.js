@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locale`,
-        languages: [`en`, `pt`],
+        languages: [`pt`, `en`],
         defaultLanguage: `pt`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
         siteUrl: `http://www.rodolfoberlezi.com.br`,

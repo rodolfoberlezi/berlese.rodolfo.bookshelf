@@ -1,15 +1,18 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import Header from "../assets/Header.js";
 import Body from "../assets/Body.js";
 import Footer from "../assets/Footer.js";
 
+import AboutSaga from "../components/AboutSaga";
+import AvaliationCards from "../components/AvaliationCards";
+import AuthorApresentation from "../components/AuthorApresentation";
+import HeroBanner from "../components/HeroBanner";
+import Sinopse from "../components/Sinopse";
+import SocialNetworks from "../components/SocialNetworks";
 import TranslatedLabel from "../components/TranslatedLabel";
-import AvaliationCards from "../components/AvaliationCards.js";
-import AuthorApresentation from "../components/AuthorApresentation.js";
-import SocialNetworks from "../components/SocialNetworks.js";
 
 const IndexPage = () => {
   const { t } = useTranslation();
@@ -33,15 +36,17 @@ const IndexPage = () => {
         </p>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
 
+        <HeroBanner></HeroBanner>
+
+        <AboutSaga></AboutSaga>
+
+        <Sinopse></Sinopse>
+
         <AvaliationCards></AvaliationCards>
 
         <AuthorApresentation></AuthorApresentation>
 
         <SocialNetworks></SocialNetworks>
-
-        <Link to="/sobre/">
-          <TranslatedLabel text={"Go to page 2"}></TranslatedLabel>
-        </Link>
       </Body>
       <Footer></Footer>
     </>

@@ -4,7 +4,6 @@ import {
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Center,
   Collapse,
@@ -15,7 +14,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import {
@@ -24,6 +22,10 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+
+import LanguagesMenu from "../components/LanguagesMenu.js";
+import TranslatedLabel from "../components/TranslatedLabel";
+
 import rbLogo from "../images/header/rb-circle.png";
 
 const Menu = () => {
@@ -59,7 +61,9 @@ const Menu = () => {
 
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Center>
-            <Image boxSize="50px" src={rbLogo}></Image>
+            <Link href="/">
+              <Image boxSize="50px" src={rbLogo}></Image>
+            </Link>
           </Center>
 
           <Flex display={{ base: "none", md: "flex" }} ml={10}>
@@ -67,35 +71,7 @@ const Menu = () => {
           </Flex>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href={"#"}
-          >
-            Choose Language
-          </Button>
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"pink.400"}
-            href={"#"}
-            _hover={{
-              bg: "pink.300",
-            }}
-          >
-            Assine a Newsletter
-          </Button>
-        </Stack>
+        <LanguagesMenu />
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
@@ -162,13 +138,13 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
+      _hover={{ bg: "gray.200" }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: "pink.400" }}
+            _groupHover={{ color: "blue.500" }}
             fontWeight={500}
           >
             {label}
@@ -184,7 +160,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
           align={"center"}
           flex={1}
         >
-          <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
+          <Icon color={"blue.500"} w={5} h={5} as={ChevronRightIcon} />
         </Flex>
       </Stack>
     </Link>
@@ -265,12 +241,13 @@ const NAV_ITEMS = [
   },
   {
     label: "Livros e Sagas",
+    href: "/livros/",
     children: [
       {
         label: "POWER HEART",
         subLabel:
           "Mercenários e seres exilados contra algozes. A liberdade e os poderes do coração e da alma esta em jogo.",
-        href: "#",
+        href: "/livros/",
       },
     ],
   },

@@ -3,5 +3,18 @@
   "Hi people": "Hi people",
   "Welcome to your new Gatsby site.": "Welcome to your new Gatsby site.",
   "Now go build something great.": "Now go build something great.",
-  "Go to page 2": "Go to page 2!"
+  "Go to page 2": "Go to page 2!",
+
+  "LanguageCommand": "Mude a língua",
+
+  "Menu1": "About Author",
+  "Menu2": "Books and Sagas",
+  "Menu3": "Contact",
+  "Menu4": "Supporters",
+  "SubMenu1": "POWER HEART",
+  "SubMenu1Text": "Mercenários e seres exilados contra algozes. A liberdade e os poderes do coração e da alma esta em jogo.",
+
+  "AboutPage": "",
+
+  "FooterRights": " All rights reserved."
 }

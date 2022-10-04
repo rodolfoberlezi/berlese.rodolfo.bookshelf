@@ -1,32 +1,34 @@
 import React from "react";
-import { Link, useI18next } from "gatsby-plugin-react-i18next";
+import { useI18next } from "gatsby-plugin-react-i18next";
+import { Select, Center } from "@chakra-ui/react";
+import { GrLanguage } from "react-icons/gr";
 
-const LanguagesMenu = ({ title }) => {
-  const { languages, originalPath } = useI18next();
+import TranslatedLabel from "./TranslatedLabel";
+
+const LanguagesMenu = () => {
+  const { languages, originalPath, changeLanguage } = useI18next();
+
+  const onChangeLanguage = (lng) => {
+    changeLanguage(lng, originalPath);
+  };
 
   return (
-    <header className="main-header">
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-          }}
-        >
-          {title}
-        </Link>
-      </h1>
-      <ul className="languages">
+    <Center direction="column">
+      <Select
+        minWidth={200}
+        placeholder={
+          <TranslatedLabel text={"LanguageCommand"}></TranslatedLabel>
+        }
+        icon={<GrLanguage />}
+        onChange={(event) => onChangeLanguage(event.target.value)}
+      >
         {languages.map((lng) => (
-          <li key={lng}>
-            <Link to={originalPath} language={lng}>
-              {lng}
-            </Link>
-          </li>
+          <option key={lng} value={lng}>
+            {lng}
+          </option>
         ))}
-      </ul>
-    </header>
+      </Select>
+    </Center>
   );
 };
 
