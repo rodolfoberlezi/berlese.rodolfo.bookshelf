@@ -14,12 +14,13 @@ import { Trans } from "gatsby-plugin-react-i18next";
 
 const AuthorApresentation = ({ text }) => {
   return (
-    <Box>
+    <Box p={8}>
+      <Heading fontSize={"2xl"}>O Autor</Heading>
       <Flex>
         <Center>
           <Box>
             <Avatar
-              size={"xl"}
+              size={"4xl"}
               src={
                 "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
               }
@@ -28,7 +29,6 @@ const AuthorApresentation = ({ text }) => {
                 border: "2px solid white",
               }}
             />
-            <Text>Rodolfo Berlezi</Text>
           </Box>
         </Center>
         <Text>
@@ -36,9 +36,9 @@ const AuthorApresentation = ({ text }) => {
           <Box p={6}>
             <Stack spacing={0} align={"center"} mb={5}>
               <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
-                John Doe
+                Rodolfo Berlezi
               </Heading>
-              <Text color={"gray.500"}>Frontend Developer</Text>
+              <Text color={"gray.500"}>Escritor e Otaku</Text>
             </Stack>
 
             <Stack direction={"row"} justify={"center"} spacing={6}>

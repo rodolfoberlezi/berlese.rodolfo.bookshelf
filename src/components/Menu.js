@@ -34,14 +34,14 @@ const Menu = () => {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
+        bg={"white"}
+        color={"gray.600"}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
         borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
+        borderColor={"gray.200"}
         align={"center"}
       >
         <Flex
@@ -189,7 +189,7 @@ const MobileNavItem = ({ label, children, href }) => {
       <Flex
         py={2}
         as={Link}
-        href={href ?? "#"}
+        href={children?.children ? href : "#"}
         justify={"space-between"}
         align={"center"}
         _hover={{

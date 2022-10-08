@@ -8,12 +8,12 @@ import Menu from "../components/Menu";
 
 const Header = () => {
   return (
-    <Container maxW="container.xl">
+    <Container maxW="container.xl" bg={"white"}>
       <HeaderLogo></HeaderLogo>
-      <Divider></Divider>
+      <Divider bg={"gray.200"}></Divider>
       <Menu></Menu>
     </Container>
   );
-}; 
+};
 
 export default Header;

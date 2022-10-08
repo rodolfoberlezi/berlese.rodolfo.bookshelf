@@ -8,13 +8,10 @@ import rbLogo from "../images/header/rb-circle.png";
 
 const Footer = () => {
   return (
-    <Container maxW="container.xl">
+    <Container maxW="container.xl" bg={"white"}>
       <Flex
         w="full"
         bg="#edf3f8"
-        _dark={{
-          bg: "#3e3e3e",
-        }}
         p={50}
         alignItems="center"
         justifyContent="center"
@@ -31,16 +28,13 @@ const Footer = () => {
           px="6"
           py="4"
           bg="white"
-          _dark={{
-            bg: "gray.900",
-          }}
         >
           <Link href="/">
             <Image boxSize="50px" src={rbLogo}></Image>
           </Link>
 
           <TranslatedLabel text="FooterRights"></TranslatedLabel>
-          
+
           <SocialNetworks sizeButton="sm"></SocialNetworks>
         </Flex>
       </Flex>

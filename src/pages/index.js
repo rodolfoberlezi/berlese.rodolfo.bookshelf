@@ -11,8 +11,9 @@ import AvaliationCards from "../components/AvaliationCards";
 import AuthorApresentation from "../components/AuthorApresentation";
 import HeroBanner from "../components/HeroBanner";
 import Sinopse from "../components/Sinopse";
-import SocialNetworks from "../components/SocialNetworks";
 import TranslatedLabel from "../components/TranslatedLabel";
+
+import "../styles/global.css";
 
 const IndexPage = () => {
   const { t } = useTranslation();
@@ -38,15 +39,13 @@ const IndexPage = () => {
 
         <HeroBanner></HeroBanner>
 
-        <AboutSaga></AboutSaga>
-
         <Sinopse></Sinopse>
 
         <AvaliationCards></AvaliationCards>
 
-        <AuthorApresentation></AuthorApresentation>
+        <AboutSaga></AboutSaga>
 
-        <SocialNetworks></SocialNetworks>
+        <AuthorApresentation></AuthorApresentation>
       </Body>
       <Footer></Footer>
     </>
