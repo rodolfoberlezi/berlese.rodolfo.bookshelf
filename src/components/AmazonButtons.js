@@ -5,7 +5,7 @@ import { FcKindle } from "react-icons/fc";
 
 import TranslatedLabel from "./TranslatedLabel";
 
-import { ph1Kindle, ph1CommonCover } from "../utils/links.json";
+import { powerHeart } from "../utils/links.json";
 
 const AmazonButtons = () => {
   const styleProps = {
@@ -25,7 +25,11 @@ const AmazonButtons = () => {
 
   return (
     <Stack width={"100%"} direction={{ base: "column", md: "row" }} spacing={4}>
-      <Link href={ph1Kindle} _hover={{ textDecoration: "none" }} isExternal>
+      <Link
+        href={powerHeart.ph1Kindle}
+        _hover={{ textDecoration: "none" }}
+        isExternal
+      >
         <Button leftIcon={<FcKindle size={32} />} {...styleProps}>
           <Text as={"span"}>Kindle eBook</Text>
         </Button>
@@ -33,7 +37,7 @@ const AmazonButtons = () => {
 
       <Flex direction={"column"}>
         <Link
-          href={ph1CommonCover}
+          href={powerHeart.ph1CommonCover}
           _hover={{ textDecoration: "none" }}
           isExternal
         >

@@ -1,5 +1,5 @@
 import React from "react";
-import { chakra, Container, Flex, Image, Link } from "@chakra-ui/react";
+import { Flex, Image, Link } from "@chakra-ui/react";
 
 import TranslatedLabel from "../components/TranslatedLabel";
 import SocialNetworks from "../components/SocialNetworks";

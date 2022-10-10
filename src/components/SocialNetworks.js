@@ -2,6 +2,8 @@ import React from "react";
 import { Flex, Link, IconButton } from "@chakra-ui/react";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
+import { socialNetworks } from "../utils/links.json";
+
 const SocialNetworks = ({
   directionFlow = "row",
   sizeButton = "lg",
@@ -23,7 +25,7 @@ const SocialNetworks = ({
       justifyContent="space-between"
     >
       <Link
-        href="https://www.facebook.com/rodolfopowerheart/"
+        href={socialNetworks.facebook}
         margin={directionFlow !== "row" ? marginAround : "0"}
         isExternal
       >
@@ -36,7 +38,7 @@ const SocialNetworks = ({
       </Link>
 
       <Link
-        href="https://www.instagram.com/rodolfoberlezi/"
+        href={socialNetworks.instagram}
         margin={directionFlow !== "row" ? marginAround : "0"}
         isExternal
       >
@@ -49,7 +51,7 @@ const SocialNetworks = ({
       </Link>
 
       <Link
-        href="https://twitter.com/rodolfoberlezi/"
+        href={socialNetworks.twitter}
         margin={directionFlow !== "row" ? marginAround : "0"}
         isExternal
       >
@@ -62,7 +64,7 @@ const SocialNetworks = ({
       </Link>
 
       <Link
-        href="https://www.youtube.com/channel/UCjnBm9RnjvdLC3ni6olOz8g"
+        href={socialNetworks.youtube}
         margin={directionFlow !== "row" ? marginAround : "0"}
         isExternal
       >
