@@ -8,11 +8,11 @@ import Menu from "../components/Menu";
 
 const Header = () => {
   return (
-    <Container maxW="container.xl" bg={"white"}>
+    <>
       <HeaderLogo></HeaderLogo>
       <Divider bg={"gray.200"}></Divider>
       <Menu></Menu>
-    </Container>
+    </>
   );
 };
 

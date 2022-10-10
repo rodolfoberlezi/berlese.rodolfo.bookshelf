@@ -16,9 +16,16 @@ import TranslatedLabel from "./TranslatedLabel";
 
 export default function BookRate() {
   return (
-    <Container maxW="container.lg">
+    <Container maxW="container.lg" py={20}>
+      <Center>
+        <Flex direction="column">
+          <Heading>Avaliações</Heading>
+          <Center>
+            <p>5 estrelas</p>
+          </Center>
+        </Flex>
+      </Center>
       <Center py={6}>
-        <Heading>Avaliações</Heading>
         <TranslatedLabel text={"Avaliações"}></TranslatedLabel>
         <Box
           maxW={"270px"}

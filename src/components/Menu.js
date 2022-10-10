@@ -38,7 +38,7 @@ const Menu = () => {
         color={"gray.600"}
         minH={"60px"}
         py={{ base: 2 }}
-        px={{ base: 4 }}
+        px={{ base: 8 }}
         borderBottom={1}
         borderStyle={"solid"}
         borderColor={"gray.200"}
