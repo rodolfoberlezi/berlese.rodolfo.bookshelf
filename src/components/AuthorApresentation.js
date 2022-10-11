@@ -4,18 +4,23 @@ import {
   Box,
   Button,
   Center,
+  Container,
   Heading,
   Flex,
   Stack,
   Text,
-  useColorModeValue,
+  Link,
 } from "@chakra-ui/react";
-import { Trans } from "gatsby-plugin-react-i18next";
 
-const AuthorApresentation = ({ text }) => {
+import TranslatedLabel from "./TranslatedLabel";
+import { socialNetworks } from "../utils/links.json";
+
+const AuthorApresentation = () => {
   return (
-    <Box p={8}>
-      <Heading fontSize={"2xl"}>O Autor</Heading>
+    <Container maxW="container.lg" py={20}>
+      <Center mb={20}>
+        <Heading fontSize={"2xl"}>O Autor</Heading>
+      </Center>
       <Stack direction={{ base: "column", md: "row" }}>
         <Flex width={"50%"}>
           <Center>
@@ -32,52 +37,47 @@ const AuthorApresentation = ({ text }) => {
               />
             </Box>
           </Center>
-          <Text>
-            <Trans>{text}</Trans>
-            <Box p={6}>
-              <Stack spacing={0} align={"center"} mb={5}>
-                <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
-                  Rodolfo Berlezi
-                </Heading>
-                <Text color={"gray.500"}>Escritor e Otaku</Text>
-              </Stack>
+          <Box p={6}>
+            <Stack spacing={0} align={"center"} mb={5}>
+              <Heading fontSize={"2xl"} fontWeight={500} fontFamily={"body"}>
+                Rodolfo Berlezi
+              </Heading>
+              <Text color={"gray.500"}>Escritor e Otaku</Text>
+            </Stack>
 
-              <Stack direction={"row"} justify={"center"} spacing={6}>
-                <Stack spacing={0} align={"center"}>
-                  <Text fontWeight={600}>23k</Text>
-                  <Text fontSize={"sm"} color={"gray.500"}>
-                    Followers
-                  </Text>
-                </Stack>
-                <Stack spacing={0} align={"center"}>
-                  <Text fontWeight={600}>23k</Text>
-                  <Text fontSize={"sm"} color={"gray.500"}>
-                    Followers
-                  </Text>
-                </Stack>
-              </Stack>
-
+            <Link
+              href={socialNetworks.instagram}
+              _hover={{ textDecoration: "none" }}
+              isExternal
+            >
               <Button
                 w={"full"}
                 mt={8}
-                bg={useColorModeValue("#151f21", "gray.900")}
+                bg={"blue.400"}
+                border={2}
+                borderStyle={"solid"}
+                borderColor={"blue.200"}
                 color={"white"}
                 rounded={"md"}
                 _hover={{
-                  transform: "translateY(-2px)",
+                  bg: "blue.600",
                   boxShadow: "lg",
+                  transform: "translateY(-2px)",
                 }}
               >
-                Follow
+                <TranslatedLabel
+                  props={{ as: "span" }}
+                  text="Follow"
+                ></TranslatedLabel>
               </Button>
-            </Box>
-          </Text>
+            </Link>
+          </Box>
         </Flex>
         <Flex>
-          <Text>Quem sou eu</Text>
+          <TranslatedLabel text="WhoAmI"></TranslatedLabel>
         </Flex>
       </Stack>
-    </Box>
+    </Container>
   );
 };
 

@@ -11,9 +11,13 @@ export default function BookRate() {
     return Array(4)
       .fill("")
       .map((_, i) => (
-        <BsStarFill key={i} color={i < rating ? "yellow" : "gray.300"} />
+        <BsStarFill
+          key={i}
+          size={24}
+          color={i < rating ? "yellow" : "gray.300"}
+        />
       ))
-      .concat(<BsStarHalf color="yellow"></BsStarHalf>);
+      .concat(<BsStarHalf size={24} color="yellow"></BsStarHalf>);
   };
 
   return (

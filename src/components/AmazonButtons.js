@@ -18,8 +18,9 @@ const AmazonButtons = () => {
     borderStyle: "solid",
     borderColor: "orange.200",
     _hover: {
-      bg: "orange.500",
       color: "white",
+      bg: "orange.500",
+      transform: "translateY(-2px)",
     },
   };
 
