@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { Container } from "@chakra-ui/react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
 import Header from "../assets/Header.js";
@@ -10,19 +11,20 @@ import AvaliationCards from "../components/BookRate";
 import AuthorApresentation from "../components/AuthorApresentation";
 import HeroBanner from "../components/HeroBanner";
 import Sinopse from "../components/Sinopse";
-import TranslatedLabel from "../components/TranslatedLabel";
+import ThreeColumns from "../components/ThreeColumns.js";
 
 import "../styles/global.css";
-import { Container } from "@chakra-ui/react";
 
 const IndexPage = () => {
   const { t } = useTranslation();
 
   return (
-    <Container maxW="container.2xl" p={0} bg={"white"} centerContent>
+    <Container maxW="container.full" p={0} bg={"white"} centerContent>
       <Header></Header>
 
       <HeroBanner></HeroBanner>
+
+      <ThreeColumns></ThreeColumns>
 
       <Sinopse></Sinopse>
 

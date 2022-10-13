@@ -1,11 +1,9 @@
 {
   "Home": "Início",
-  "Hi people": "Olá pessoal",
-  "Welcome to your new Gatsby site.": "Bem vindos ao meu novo site Gatsby.",
-  "Now go build something great.": "Agora faça algo grandioso.",
-  "Go to page 2": "Para a página 2!",
 
   "LanguageCommand": "Change language",
+  "pt": "Portuguese",
+  "en": "English",
 
   "Menu1": "Sobre o Autor",
   "Menu2": "Livros e Sagas",

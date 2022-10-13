@@ -13,6 +13,8 @@ import {
 } from "@chakra-ui/react";
 
 import TranslatedLabel from "./TranslatedLabel";
+
+import author2 from "../images/author/charuto.jpg";
 import { socialNetworks } from "../utils/links.json";
 
 const AuthorApresentation = () => {
@@ -26,10 +28,8 @@ const AuthorApresentation = () => {
           <Center>
             <Box>
               <Avatar
-                size={"4xl"}
-                src={
-                  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ"
-                }
+                size={"3xl"}
+                src={author2}
                 alt={"Author"}
                 css={{
                   border: "2px solid white",

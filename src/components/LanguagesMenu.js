@@ -24,7 +24,7 @@ const LanguagesMenu = () => {
       >
         {languages.map((lng) => (
           <option key={lng} value={lng}>
-            {lng}
+            <TranslatedLabel text={lng}></TranslatedLabel>
           </option>
         ))}
       </Select>

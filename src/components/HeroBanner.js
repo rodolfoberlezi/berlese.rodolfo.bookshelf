@@ -9,9 +9,9 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import nameTitleImage from "../images/header/name-title.png";
-import TranslatedLabel from "./TranslatedLabel";
+import bookEffect from "../images/bookCovers/bookWithEffects.png";
 import AmazonButtons from "./AmazonButtons";
+import TranslatedHeading from "./TranslatedHeading";
 
 const HeroBanner = () => {
   return (
@@ -19,9 +19,8 @@ const HeroBanner = () => {
       <Stack width={"100%"} direction={{ base: "column", md: "row" }}>
         <Flex flex={1} align={"center"} justify={"center"}>
           <Stack spacing={6} w={"full"} maxW={"lg"}>
-            <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
-              <TranslatedLabel text="Lorem ipsum"></TranslatedLabel>
-            </Heading>
+            <TranslatedHeading text="Lorem ipsum"></TranslatedHeading>
+
             <Text position={"relative"}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -38,10 +37,8 @@ const HeroBanner = () => {
               <Image
                 w={300}
                 h={300}
-                alt={"Login Image"}
-                src={
-                  "https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                }
+                alt={"Power Heart"}
+                src={bookEffect}
               ></Image>
             </Box>
           </Stack>
