@@ -15,6 +15,7 @@ import {
   PopoverContent,
   useColorModeValue,
   useDisclosure,
+  Container,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -32,16 +33,13 @@ const Menu = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Container maxW={"container.xl"}>
       <Flex
         bg={"white"}
         color={"gray.600"}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 8 }}
-        borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={"gray.200"}
         align={"center"}
       >
         <Flex
@@ -77,7 +75,7 @@ const Menu = () => {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
-    </Box>
+    </Container>
   );
 };
 

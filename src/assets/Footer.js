@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Image, Link } from "@chakra-ui/react";
+import { Container, Flex, Image, Link } from "@chakra-ui/react";
 
 import TranslatedLabel from "../components/TranslatedLabel";
 import SocialNetworks from "../components/SocialNetworks";
@@ -8,35 +8,39 @@ import rbLogo from "../images/header/rb-circle.png";
 
 const Footer = () => {
   return (
-    <Flex
-      w="full"
-      bg="#edf3f8"
-      p={50}
-      alignItems="center"
-      justifyContent="center"
-    >
+    <Container maxW="container.2xl" p={0}>
       <Flex
         w="full"
-        as="footer"
-        flexDir={{
-          base: "column",
-          sm: "row",
-        }}
-        align="center"
-        justify="space-between"
-        px="8"
-        py="4"
-        bg="white"
+        bg="#edf3f8"
+        p={50}
+        alignItems="center"
+        justifyContent="center"
       >
-        <Link href="/">
-          <Image boxSize="50px" src={rbLogo}></Image>
-        </Link>
+        <Container maxW="container.xl">
+          <Flex
+            w="full"
+            as="footer"
+            flexDir={{
+              base: "column",
+              sm: "row",
+            }}
+            align="center"
+            justify="space-between"
+            py="4"
+            px="8"
+            bg="white"
+          >
+            <Link href="/">
+              <Image boxSize="50px" src={rbLogo}></Image>
+            </Link>
 
-        <TranslatedLabel text="FooterRights"></TranslatedLabel>
+            <TranslatedLabel text="FooterRights"></TranslatedLabel>
 
-        <SocialNetworks sizeButton="sm"></SocialNetworks>
+            <SocialNetworks sizeButton="sm"></SocialNetworks>
+          </Flex>
+        </Container>
       </Flex>
-    </Flex>
+    </Container>
   );
 };
 

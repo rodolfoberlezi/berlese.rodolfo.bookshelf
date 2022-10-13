@@ -19,7 +19,7 @@ const IndexPage = () => {
   const { t } = useTranslation();
 
   return (
-    <Container maxW="container.xl" bg={"white"}>
+    <Container maxW="container.2xl" p={0} bg={"white"} centerContent>
       <Header></Header>
 
       <HeroBanner></HeroBanner>
