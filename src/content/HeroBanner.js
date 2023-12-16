@@ -11,8 +11,8 @@ import {
 } from "@chakra-ui/react";
 
 import bookEffect from "../images/bookCovers/bookWithEffects.png";
-import AmazonButtons from "./AmazonButtons";
-import TranslatedHeading from "./TranslatedHeading";
+import AmazonButtons from "../components/AmazonButtons";
+import TranslatedHeading from "../components/TranslatedHeading";
 
 const HeroBanner = () => {
   return (

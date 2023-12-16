@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Flex, Image, Link } from "@chakra-ui/react";
 
-import TranslatedLabel from "../components/TranslatedLabel";
-import SocialNetworks from "../components/SocialNetworks";
+import TranslatedLabel from "./TranslatedLabel";
+import SocialNetworks from "./SocialNetworks";
 
 import rbLogo from "../images/header/rb-circle.png";
 

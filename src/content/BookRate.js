@@ -2,9 +2,9 @@ import React from "react";
 import { Center, Flex, Container } from "@chakra-ui/react";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
 
-import Carousel from "./Carousel";
-import TranslatedLabel from "./TranslatedLabel";
-import TranslatedHeading from "./TranslatedHeading";
+import Carousel from "../components/Carousel";
+import TranslatedLabel from "../components/TranslatedLabel";
+import TranslatedHeading from "../components/TranslatedHeading";
 
 export default function BookRate() {
   const renderStars = (rating) => {

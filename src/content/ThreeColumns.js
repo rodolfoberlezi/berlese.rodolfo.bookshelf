@@ -9,7 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import TranslatedHeading from "./TranslatedHeading";
+import TranslatedHeading from "../components/TranslatedHeading";
 
 import bookCover from "../images/bookCovers/mainCover.jpg";
 

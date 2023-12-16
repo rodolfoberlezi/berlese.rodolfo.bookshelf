@@ -12,7 +12,7 @@ import {
   Link,
 } from "@chakra-ui/react";
 
-import TranslatedLabel from "./TranslatedLabel";
+import TranslatedLabel from "../components/TranslatedLabel";
 
 import author2 from "../images/author/charuto.jpg";
 import { socialNetworks } from "../utils/links.json";

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Divider } from "@chakra-ui/react";
 
-import HeaderLogo from "../components/HeaderLogo";
-import Menu from "../components/Menu";
+import HeaderLogo from "../content/HeaderLogo";
+import Menu from "./Menu";
 
 const Header = () => {
   return (

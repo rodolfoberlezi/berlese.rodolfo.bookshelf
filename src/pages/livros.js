@@ -1,12 +1,11 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
-
-import Header from "../assets/Header.js";
-import Footer from "../assets/Footer.js";
-
-import TranslatedLabel from "../components/TranslatedLabel";
 import { Container } from "@chakra-ui/react";
+
+import Header from "../components/Header.js";
+import Footer from "../components/Footer.js";
+import TranslatedLabel from "../components/TranslatedLabel";
 
 const BooksPage = () => {
   const { t } = useTranslation();

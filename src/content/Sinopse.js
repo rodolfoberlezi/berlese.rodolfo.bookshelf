@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Heading } from "@chakra-ui/react";
-import TranslatedLabel from "./TranslatedLabel";
+import TranslatedLabel from "../components/TranslatedLabel";
 
-const AboutSaga = () => {
+const Sinopse = () => {
   return (
     <Container maxW="container.lg">
-      <Heading mb={5}>A Saga / Explore</Heading>
+      <Heading mb={5}>Sinopse</Heading>
       <TranslatedLabel
         text={
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
@@ -15,4 +15,4 @@ const AboutSaga = () => {
   );
 };
 
-export default AboutSaga;
+export default Sinopse;

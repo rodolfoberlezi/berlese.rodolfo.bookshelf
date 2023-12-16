@@ -3,15 +3,11 @@ import { graphql } from "gatsby";
 import { Container } from "@chakra-ui/react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-import Header from "../assets/Header.js";
-import Footer from "../assets/Footer.js";
+import Header from "../components/Header.js";
+import Footer from "../components/Footer.js";
 
-import AboutSaga from "../components/AboutSaga";
-import AvaliationCards from "../components/BookRate";
-import AuthorApresentation from "../components/AuthorApresentation";
-import HeroBanner from "../components/HeroBanner";
-import Sinopse from "../components/Sinopse";
-import ThreeColumns from "../components/ThreeColumns.js";
+import HeroBanner from "../content/HeroBanner.js";
+import ThreeColumns from "../content/ThreeColumns.js";
 
 import "../styles/global.css";
 
@@ -25,14 +21,6 @@ const IndexPage = () => {
       <ThreeColumns></ThreeColumns>
 
       <HeroBanner></HeroBanner>
-
-      <Sinopse></Sinopse>
-
-      <AvaliationCards></AvaliationCards>
-
-      <AboutSaga></AboutSaga>
-
-      <AuthorApresentation></AuthorApresentation>
 
       <Footer></Footer>
     </Container>

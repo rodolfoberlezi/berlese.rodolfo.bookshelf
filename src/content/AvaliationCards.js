@@ -12,7 +12,7 @@ import {
   useColorModeValue,
   Container,
 } from "@chakra-ui/react";
-import TranslatedLabel from "./TranslatedLabel";
+import TranslatedLabel from "../components/TranslatedLabel";
 
 export default function BookRate() {
   return (
