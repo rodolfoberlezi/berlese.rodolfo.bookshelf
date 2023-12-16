@@ -198,7 +198,7 @@ const MobileNavItem = ({ label, children, href }) => {
           fontWeight={600}
           color={useColorModeValue("gray.600", "gray.200")}
         >
-          {label}
+          <TranslatedLabel text={label} />
         </Text>
         {children && (
           <Icon
