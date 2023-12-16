@@ -33,7 +33,7 @@ const Menu = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Container maxW={"container.xl"}>
+    <Box w="100%">
       <Flex
         bg={"white"}
         color={"gray.600"}
@@ -75,7 +75,7 @@ const Menu = () => {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
-    </Container>
+    </Box>
   );
 };
 
@@ -87,7 +87,7 @@ const DesktopNav = () => {
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label} paddingTop={3}>
+        <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
               <Link
@@ -101,7 +101,7 @@ const DesktopNav = () => {
                   color: linkHoverColor,
                 }}
               >
-                {navItem.label}
+                <TranslatedLabel text={navItem.label} />
               </Link>
             </PopoverTrigger>
 
@@ -234,28 +234,24 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: "Sobre o Autor",
-    href: "#",
+    label: "Menu1",
+    href: "#about",
   },
   {
-    label: "Livros e Sagas",
-    href: "/livros/",
-    children: [
-      {
-        label: "POWER HEART",
-        subLabel:
-          "Mercenários e seres exilados contra algozes. A liberdade e os poderes do coração e da alma esta em jogo.",
-        href: "/livros/",
-      },
-    ],
+    label: "Menu2",
+    href: "#books",
+    // children: [
+    //   {
+    //     label: "POWER HEART",
+    //     subLabel:
+    //       "Mercenários e seres exilados contra algozes. A liberdade e os poderes do coração e da alma esta em jogo.",
+    //     href: "/livros/",
+    //   },
+    // ],
   },
   {
-    label: "Contato",
-    href: "#",
-  },
-  {
-    label: "Apoiadores",
-    href: "#",
+    label: "Menu3",
+    href: "#contact",
   },
 ];
 

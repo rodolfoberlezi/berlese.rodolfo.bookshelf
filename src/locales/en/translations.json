@@ -1,12 +1,12 @@
 {
   "Home": "Home",
 
-  "LanguageCommand": "Mude a língua",
+  "LanguageCommand": "Change language",
   "pt": "Português",
-  "en": "Inglês",
+  "en": "English",
 
-  "Menu1": "About Author",
-  "Menu2": "Books and Sagas",
+  "Menu1": "About",
+  "Menu2": "Books",
   "Menu3": "Contact",
   "Menu4": "Supporters",
   "SubMenu1": "POWER HEART",
