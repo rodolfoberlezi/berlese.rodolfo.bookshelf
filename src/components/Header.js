@@ -8,9 +8,8 @@ const Header = () => {
   return (
     <>
       <Menu />
-      <Divider border={1} bg={"gray.200"} />
+      <Divider h={0.5} bg={"black"} />
       <HeaderLogo />
-      <Divider border={1} bg={"gray.200"} />
     </>
   );
 };
