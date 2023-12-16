@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Link, Image } from "@chakra-ui/react";
 
-import nameTitleImage from "../images/header/name-title.png";
+import titleImageWithSentences from "../images/header/name-title-action.png";
 
 const HeaderLogo = () => {
   return (
-    <Container maxHeight="225px" centerContent>
-      <Link href="/">
-        <Image src={nameTitleImage} alt="Rodolfo Berlezi"></Image>
+    <Container centerContent>
+      <Link to="/">
+        <Image src={titleImageWithSentences} alt="Rodolfo Berlese"></Image>
       </Link>
     </Container>
   );

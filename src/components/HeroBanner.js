@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Box,
+  Center,
   Container,
   Flex,
   Heading,
@@ -15,12 +16,15 @@ import TranslatedHeading from "./TranslatedHeading";
 
 const HeroBanner = () => {
   return (
-    <Container maxW="container.lg" height={400} width={"100%"}>
+    <Container maxW="container.lg" mb={20} width={"100%"}>
       <Stack width={"100%"} direction={{ base: "column", md: "row" }}>
         <Flex flex={1} align={"center"} justify={"center"}>
           <Stack spacing={6} w={"full"} maxW={"lg"}>
-            <TranslatedHeading text="Lorem ipsum"></TranslatedHeading>
-
+            <TranslatedHeading text="POWER HEART"></TranslatedHeading>
+            <TranslatedHeading
+              props={{ fontSize: "1.75rem" }}
+              text={"Livro 1 - O Recomeço da Alma"}
+            ></TranslatedHeading>
             <Text position={"relative"}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -31,18 +35,9 @@ const HeroBanner = () => {
             <AmazonButtons></AmazonButtons>
           </Stack>
         </Flex>
-        <Flex width={"50%"} align={"center"} justify={"center"}>
-          <Stack direction={{ base: "column", md: "row" }} spacing={4}>
-            <Box p={12}>
-              <Image
-                w={300}
-                h={300}
-                alt={"Power Heart"}
-                src={bookEffect}
-              ></Image>
-            </Box>
-          </Stack>
-        </Flex>
+        <Center p={12}>
+          <Image alt={"Power Heart"} src={bookEffect}></Image>
+        </Center>
       </Stack>
     </Container>
   );

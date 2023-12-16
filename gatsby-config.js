@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `berlezi.rodolfo.bookshelf`,
-    siteUrl: `http://www.rodolfoberlezi.com.br`,
+    title: `berlese.rodolfo.bookshelf`,
+    siteUrl: `http://www.rodolfoberlese.com.br`,
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -36,7 +36,7 @@ module.exports = {
         languages: [`pt`, `en`],
         defaultLanguage: `pt`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `http://www.rodolfoberlezi.com.br`,
+        siteUrl: `http://www.rodolfoberlese.com.br`,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {

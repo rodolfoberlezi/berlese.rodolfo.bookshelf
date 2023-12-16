@@ -22,9 +22,9 @@ const IndexPage = () => {
     <Container maxW="container.full" p={0} bg={"white"} centerContent>
       <Header></Header>
 
-      <HeroBanner></HeroBanner>
-
       <ThreeColumns></ThreeColumns>
+
+      <HeroBanner></HeroBanner>
 
       <Sinopse></Sinopse>
 

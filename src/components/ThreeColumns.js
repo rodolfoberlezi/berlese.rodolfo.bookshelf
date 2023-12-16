@@ -16,15 +16,21 @@ import bookCover from "../images/bookCovers/mainCover.jpg";
 const ThreeColumns = () => {
   return (
     <Container maxW="container.lg" width={"100%"}>
-      <Center>
-        <TranslatedHeading text={"Os sonhos"}></TranslatedHeading>
+      <Center mt={"1em"} mb={"3em"}>
+        <TranslatedHeading
+          text={"Pronto para exalar sua alma?"}
+        ></TranslatedHeading>
       </Center>
       <Flex
         width={"100%"}
         direction={{ base: "column", md: "row" }}
         justifyContent={"space-between"}
       >
-        <Stack width={"33%"} direction={{ base: "column", md: "row" }}>
+        <Stack width={{ base: "100%", md: "30%" }}>
+          <TranslatedHeading
+            props={{ fontSize: "1.75rem" }}
+            text={"Acompanhe"}
+          ></TranslatedHeading>
           <Text>
             "Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -36,11 +42,21 @@ const ThreeColumns = () => {
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum."
           </Text>
+          <Text>
+            "It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem
+            Ipsum."
+          </Text>
         </Stack>
-        <Box maxWidth={"33%"}>
+        <Box maxWidth={{ base: "100%", md: "35%" }}>
           <Image width={"100%"} src={bookCover}></Image>
         </Box>
-        <Stack width={"33%"} direction={{ base: "column", md: "row" }}>
+        <Stack width={{ base: "100%", md: "30%" }}>
+          <TranslatedHeading
+            props={{ fontSize: "1.75rem" }}
+            text={"Explore"}
+          ></TranslatedHeading>
           <Text>
             "Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
