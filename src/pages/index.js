@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { Container } from "@chakra-ui/react";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
-import Header from "../components/Header.js";
+import Header from "../content/Header.js";
 import Footer from "../components/Footer.js";
 
 import HeroBanner from "../content/HeroBanner.js";
