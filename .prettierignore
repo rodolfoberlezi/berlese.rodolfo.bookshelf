@@ -1,0 +1,12 @@
+**/node_modules
+**/images
+**/.cache
+**/public
+**/dist
+
+**/*.html
+**/*.css
+**/*.json
+**/.git
+**/.svn
+**/.hg

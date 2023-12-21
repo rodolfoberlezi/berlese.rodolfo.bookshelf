@@ -1,0 +1,23 @@
+{
+    "parser": "babel",
+    "filepath": "c:\\Users\\rodol\\Documents\\Projetos de Autor\\berlezi.rodolfo.bookshelf\\package.json",
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "endOfLine": "lf",
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "singleAttributePerLine": false,
+    "bracketSameLine": false,
+    "jsxSingleQuote": true,
+    "printWidth": 80,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "useTabs": false,
+    "embeddedLanguageFormatting": "auto",
+    "vueIndentScriptAndStyle": false
+}

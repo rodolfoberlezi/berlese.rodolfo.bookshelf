@@ -1,21 +1,16 @@
 {
-  "Home": "Início",
-
-  "LanguageCommand": "Change language",
-  "pt": "Português",
-  "en": "English",
-
-  "Menu1": "Sobre",
-  "Menu2": "Livros",
-  "Menu3": "Contato",
-  "Menu4": "Apoiadores",
-  "SubMenu1": "POWER HEART",
-  "SubMenu1Text": "Mercenários e seres exilados contra algozes. A liberdade e os poderes do coração e da alma esta em jogo.",
-
-  "AboutPage": "",
-
-  "Follow": "Siga",
-  "WhoAmI": "Quem sou eu",
-
-  "FooterRights": "Todos direitos reservados."
+    "Home": "Início",
+    "LanguageCommand": "Change language",
+    "pt": "Português",
+    "en": "English",
+    "Menu1": "Sobre",
+    "Menu2": "Livros",
+    "Menu3": "Contato",
+    "Menu4": "Apoiadores",
+    "SubMenu1": "POWER HEART",
+    "SubMenu1Text": "Mercenários e seres exilados contra algozes. A liberdade e os poderes do coração e da alma esta em jogo.",
+    "AboutPage": "",
+    "Follow": "Siga",
+    "WhoAmI": "Quem sou eu",
+    "FooterRights": "Todos direitos reservados."
 }

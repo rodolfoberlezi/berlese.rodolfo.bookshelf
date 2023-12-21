@@ -1,13 +1,13 @@
-import React from "react";
-import { Heading } from "@chakra-ui/react";
-import { Trans } from "gatsby-plugin-react-i18next";
+import React from 'react'
+import { Heading } from '@chakra-ui/react'
+import { Trans } from 'gatsby-plugin-react-i18next'
 
 const TranslatedHeading = ({ props, text }) => {
-  return (
-    <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }} {...props}>
-      <Trans>{text}</Trans>
-    </Heading>
-  );
-};
+    return (
+        <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} {...props}>
+            <Trans>{text}</Trans>
+        </Heading>
+    )
+}
 
-export default TranslatedHeading;
+export default TranslatedHeading

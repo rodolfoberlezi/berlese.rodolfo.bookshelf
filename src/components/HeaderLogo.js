@@ -1,16 +1,23 @@
-import React from "react";
-import { Box, Link, Image } from "@chakra-ui/react";
+import React from 'react'
+import { Box, Image, AspectRatio } from '@chakra-ui/react'
 
-import titleImageWithSentences from "../images/header/name-title-action.png";
+import titleImageWithSentences from '../images/header/name-title-action.png'
+import pptLogo from '../images/header/name-title-first-entrance.mp4'
 
 const HeaderLogo = () => {
-  return (
-    <Box>
-      <Link to="/">
-        <Image src={titleImageWithSentences} alt="Rodolfo Berlese"></Image>
-      </Link>
-    </Box>
-  );
-};
+    return (
+        <Box mt={'60px'} mb={4}>
+            <Image
+                src={titleImageWithSentences}
+                alt='Rodolfo Berlese'
+                objectFit={'cover'}
+            />
 
-export default HeaderLogo;
+            {/* <AspectRatio maxW={500} ratio={1}>
+        <iframe title="naruto" src={pptLogo} allowFullScreen />
+      </AspectRatio> */}
+        </Box>
+    )
+}
+
+export default HeaderLogo

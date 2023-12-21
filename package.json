@@ -1,39 +1,43 @@
 {
-  "name": "berlese.rodolfo.bookshelf",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Personal author's page made with Gatsby ;)",
-  "author": "Rodolfo Berlese",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "dev": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@chakra-ui/gatsby-plugin": "^3.0.6",
-    "@chakra-ui/icons": "^2.0.9",
-    "@chakra-ui/react": "^2.8.2",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "framer-motion": "^7.10.3",
-    "gatsby": "^4.22.1",
-    "gatsby-plugin-image": "^2.22.0",
-    "gatsby-plugin-manifest": "^4.22.0",
-    "gatsby-plugin-react-i18next": "^2.0.4",
-    "gatsby-plugin-sass": "^5.22.0",
-    "gatsby-plugin-sharp": "^4.22.0",
-    "gatsby-source-filesystem": "^4.22.0",
-    "gatsby-transformer-sharp": "^4.22.0",
-    "i18next": "^21.9.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-i18next": "^11.18.5",
-    "react-icons": "^4.4.0",
-    "sass": "^1.54.9"
-  }
+    "name": "berlese.rodolfo.bookshelf",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Personal author's page made with Gatsby ;)",
+    "author": "Rodolfo Berlese",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "dev": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "@chakra-ui/gatsby-plugin": "^3.0.6",
+        "@chakra-ui/icons": "^2.0.9",
+        "@chakra-ui/react": "^2.8.2",
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "framer-motion": "^7.10.3",
+        "gatsby": "^4.22.1",
+        "gatsby-plugin-image": "^2.22.0",
+        "gatsby-plugin-manifest": "^4.22.0",
+        "gatsby-plugin-react-i18next": "^2.0.4",
+        "gatsby-plugin-sass": "^5.22.0",
+        "gatsby-plugin-sharp": "^4.22.0",
+        "gatsby-source-filesystem": "^4.22.0",
+        "gatsby-transformer-sharp": "^4.22.0",
+        "i18next": "^21.9.1",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "react-i18next": "^11.18.5",
+        "react-icons": "^4.4.0",
+        "sass": "^1.54.9"
+    },
+    "devDependencies": {
+        "prettier": "^3.1.1"
+    }
 }

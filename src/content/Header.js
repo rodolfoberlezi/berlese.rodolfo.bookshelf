@@ -1,17 +1,16 @@
-import React from "react";
-import { Divider } from "@chakra-ui/react";
+import React from 'react'
+import { Box } from '@chakra-ui/react'
 
-import HeaderLogo from "../content/HeaderLogo";
-import Menu from "../components/Menu";
+import HeaderLogo from '../components/HeaderLogo'
+import Menu from '../components/Menu'
 
 const Header = () => {
-  return (
-    <>
-      <Menu />
-      <Divider h={0.5} bg={"black"} />
-      <HeaderLogo />
-    </>
-  );
-};
+    return (
+        <Box height='100vh'>
+            <Menu />
+            <HeaderLogo />
+        </Box>
+    )
+}
 
-export default Header;
+export default Header
