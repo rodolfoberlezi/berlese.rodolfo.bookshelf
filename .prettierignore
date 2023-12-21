@@ -4,9 +4,6 @@
 **/public
 **/dist
 
-**/*.html
-**/*.css
-**/*.json
 **/.git
 **/.svn
 **/.hg
