@@ -19,13 +19,13 @@ const IndexPage = () => {
             <Menu />
             <Container maxW='container.full' p={0} bg={'white'} centerContent>
                 <Header />
-                <AuthorApresentation />
                 <NosceTeIpsum />
+                <AuthorApresentation />
                 {/*/ ou o que eh ser livre HeroBanner // apresenta power heart */}
-                <HeroBanner />
-                <ThreeColumns />
+                {/* <HeroBanner />
+                <ThreeColumns /> */}
                 {/*/ me siga // me apoie - compra ou doacao */}
-                <Footer />
+                {/* <Footer /> */}
             </Container>
         </>
     )

@@ -8,17 +8,17 @@ const NosceTeIpsum = () => {
             backgroundColor='black'
             borderRadius={10}
             height={510}
-            width='80vw'
+            width='100vw'
             my={2}
         >
             <Stack
                 alignItems='center'
-                color='white'
-                fontSize={33}
                 justifyContent='center'
+                color='white'
+                fontSize={[23, 33]}
                 height='100%'
             >
-                <Heading fontSize={66} variant='h2'>
+                <Heading fontSize={[43, 66]} variant='h2'>
                     Nosce te Ipsum
                 </Heading>
                 <TranslatedLabel text={'NosceTeIpsum'} />
