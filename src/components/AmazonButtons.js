@@ -52,14 +52,14 @@ const AmazonButtons = () => {
                         <TranslatedLabel
                             props={{ as: 'span' }}
                             text='CommonCover'
-                        ></TranslatedLabel>
+                        />
                     </Button>
                 </Link>
                 <Center>
                     <TranslatedLabel
                         props={{ as: 'span' }}
                         text='Soon'
-                    ></TranslatedLabel>
+                    />
                 </Center>
             </Flex>
         </Stack>

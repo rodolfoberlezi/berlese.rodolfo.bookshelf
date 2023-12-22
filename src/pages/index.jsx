@@ -10,6 +10,7 @@ import HeroBanner from '../content/HeroBanner.js'
 import NosceTeIpsum from '../content/NosceTeIpsum.js'
 import ThreeColumns from '../content/ThreeColumns.js'
 import '../styles/global.css'
+import FollowMe from '../content/FollowMe.js'
 
 const IndexPage = () => {
     useTranslation()
@@ -25,6 +26,7 @@ const IndexPage = () => {
                 {/* <HeroBanner />
                 <ThreeColumns /> */}
                 {/*/ me siga // me apoie - compra ou doacao */}
+                <FollowMe />
                 {/* <Footer /> */}
             </Container>
         </>

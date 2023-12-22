@@ -36,6 +36,7 @@ const Menu = () => {
             borderBottom={'solid'}
             borderBottomWidth={0.5}
             borderColor={'black'}
+            zIndex={999}
         >
             <Flex
                 bg={'white'}

@@ -1,9 +1,7 @@
 import React from 'react'
 import { Container, Flex, Image, Link } from '@chakra-ui/react'
-
 import TranslatedLabel from './TranslatedLabel'
 import SocialNetworks from './SocialNetworks'
-
 import rbLogo from '../images/header/rb-circle.png'
 
 const Footer = () => {
