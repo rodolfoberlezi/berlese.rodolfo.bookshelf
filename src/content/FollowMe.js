@@ -1,11 +1,5 @@
 import React from 'react'
-import {
-    Center,
-    Heading,
-    Stack,
-    Link,
-    IconButton,
-} from '@chakra-ui/react'
+import { Center, Heading, Stack, Link, IconButton } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
 import { socialNetworks } from '../utils/links.json'
 import { FaAmazon, FaTwitter, FaYoutube } from 'react-icons/fa'

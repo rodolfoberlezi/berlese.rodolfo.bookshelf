@@ -27,7 +27,7 @@ const IndexPage = () => {
                 <ThreeColumns /> */}
                 {/*/ me siga // me apoie - compra ou doacao */}
                 <FollowMe />
-                {/* <Footer /> */}
+                <Footer />
             </Container>
         </>
     )

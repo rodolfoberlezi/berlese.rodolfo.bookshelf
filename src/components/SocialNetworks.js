@@ -39,35 +39,8 @@ const SocialNetworks = ({
                     aria-label='Amazon'
                     colorScheme='yellow'
                     icon={<FaAmazon />}
-                ></IconButton>
+                />
             </Link>
-
-            <Link
-                href={socialNetworks.facebook}
-                margin={directionFlow !== 'row' ? marginAround : '0'}
-                isExternal
-            >
-                <IconButton
-                    size={sizeButton}
-                    aria-label='Facebook'
-                    colorScheme='facebook'
-                    icon={<FaFacebook />}
-                ></IconButton>
-            </Link>
-
-            <Link
-                href={socialNetworks.instagram}
-                margin={directionFlow !== 'row' ? marginAround : '0'}
-                isExternal
-            >
-                <IconButton
-                    size={sizeButton}
-                    aria-label='Instagram'
-                    colorScheme='pink'
-                    icon={<FaInstagram />}
-                ></IconButton>
-            </Link>
-
             <Link
                 href={socialNetworks.twitter}
                 margin={directionFlow !== 'row' ? marginAround : '0'}
@@ -78,9 +51,8 @@ const SocialNetworks = ({
                     aria-label='Twitter'
                     colorScheme='twitter'
                     icon={<FaTwitter />}
-                ></IconButton>
+                />
             </Link>
-
             <Link
                 href={socialNetworks.youtube}
                 margin={directionFlow !== 'row' ? marginAround : '0'}
@@ -91,7 +63,31 @@ const SocialNetworks = ({
                     aria-label='Youtube'
                     colorScheme='red'
                     icon={<FaYoutube />}
-                ></IconButton>
+                />
+            </Link>
+            <Link
+                href={socialNetworks.instagram}
+                margin={directionFlow !== 'row' ? marginAround : '0'}
+                isExternal
+            >
+                <IconButton
+                    size={sizeButton}
+                    aria-label='Instagram'
+                    colorScheme='pink'
+                    icon={<FaInstagram />}
+                />
+            </Link>
+            <Link
+                href={socialNetworks.facebook}
+                margin={directionFlow !== 'row' ? marginAround : '0'}
+                isExternal
+            >
+                <IconButton
+                    size={sizeButton}
+                    aria-label='Facebook'
+                    colorScheme='facebook'
+                    icon={<FaFacebook />}
+                />
             </Link>
         </Flex>
     )
