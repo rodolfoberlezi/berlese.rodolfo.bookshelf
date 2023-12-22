@@ -5,9 +5,10 @@ import { useTranslation } from 'gatsby-plugin-react-i18next'
 import Header from '../components/Header.js'
 import Menu from '../components/Menu.js'
 import Footer from '../components/Footer.js'
-import HeroBanner from '../content/HeroBanner.js'
-import ThreeColumns from '../content/ThreeColumns.js'
 import AuthorApresentation from '../content/AuthorApresentation.js'
+import HeroBanner from '../content/HeroBanner.js'
+import NosceTeIpsum from '../content/NosceTeIpsum.js'
+import ThreeColumns from '../content/ThreeColumns.js'
 import '../styles/global.css'
 
 const IndexPage = () => {
@@ -19,8 +20,11 @@ const IndexPage = () => {
             <Container maxW='container.full' p={0} bg={'white'} centerContent>
                 <Header />
                 <AuthorApresentation />
-                <ThreeColumns />
+                <NosceTeIpsum />
+                {/*/ ou o que eh ser livre HeroBanner // apresenta power heart */}
                 <HeroBanner />
+                <ThreeColumns />
+                {/*/ me siga // me apoie - compra ou doacao */}
                 <Footer />
             </Container>
         </>
