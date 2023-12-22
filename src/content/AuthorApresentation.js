@@ -1,85 +1,51 @@
 import React from 'react'
-import {
-    Avatar,
-    Box,
-    Button,
-    Center,
-    Container,
-    Heading,
-    Flex,
-    Stack,
-    Text,
-    Link,
-} from '@chakra-ui/react'
+import { Box, Center, Heading, Flex, Stack, Image } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
-import author2 from '../images/author/charuto.jpg'
-import { socialNetworks } from '../utils/links.json'
+import author from '../images/author/cafezinho.png'
 
 const AuthorApresentation = () => {
     return (
-        <Container maxW='container.lg' py={20}>
-            <Center mb={20}>
-                <Heading fontSize={'2xl'}>O Autor</Heading>
-            </Center>
-            <Stack direction={{ base: 'column', md: 'row' }}>
-                <Flex width={'50%'}>
-                    <Center>
-                        <Box>
-                            <Avatar
-                                size={'3xl'}
-                                src={author2}
-                                alt={'Author'}
-                                css={{
-                                    border: '2px solid white',
-                                }}
-                            />
-                        </Box>
-                    </Center>
-                    <Box p={6}>
-                        <Stack spacing={0} align={'center'} mb={5}>
-                            <Heading
-                                fontSize={'2xl'}
-                                fontWeight={500}
-                                fontFamily={'body'}
-                            >
-                                Rodolfo Berlese
-                            </Heading>
-                            <Text color={'gray.500'}>Escritor e Otaku</Text>
-                        </Stack>
-
-                        <Link
-                            href={socialNetworks.instagram}
-                            _hover={{ textDecoration: 'none' }}
-                            isExternal
-                        >
-                            <Button
-                                w={'full'}
-                                mt={8}
-                                bg={'blue.400'}
-                                border={2}
-                                borderStyle={'solid'}
-                                borderColor={'blue.200'}
-                                color={'white'}
-                                rounded={'md'}
-                                _hover={{
-                                    bg: 'blue.600',
-                                    boxShadow: 'lg',
-                                    transform: 'translateY(-2px)',
-                                }}
-                            >
-                                <TranslatedLabel
-                                    props={{ as: 'span' }}
-                                    text='Follow'
-                                ></TranslatedLabel>
-                            </Button>
-                        </Link>
-                    </Box>
-                </Flex>
+        <Box
+            backgroundColor='black'
+            borderRadius={10}
+            height={410}
+            width='80vw'
+            my={2}
+        >
+            <Stack
+                alignItems='center'
+                color='white'
+                direction={{ base: 'column', md: 'row' }}
+                maxWidth='90%'
+                fontSize={33}
+                justifyContent='center'
+                height='100%'
+                mx='auto'
+            >
                 <Flex>
-                    <TranslatedLabel text='WhoAmI'></TranslatedLabel>
+                    <Center>
+                        <Image
+                            borderRadius='full'
+                            maxW={'350px'}
+                            mr={8}
+                            src={author}
+                            alt={'Rodolfo Berlese photo'}
+                        />
+                    </Center>
+                    <Stack>
+                        <Heading variant='h4' mb={2.5}>
+                            Rodolfo Berlese
+                        </Heading>
+                        <Stack fontSize={18}>
+                            <Box mb={1.5}>
+                                <TranslatedLabel text='WhoAmIP1' />
+                            </Box>
+                            <TranslatedLabel text='WhoAmIP2' />
+                        </Stack>
+                    </Stack>
                 </Flex>
             </Stack>
-        </Container>
+        </Box>
     )
 }
 
