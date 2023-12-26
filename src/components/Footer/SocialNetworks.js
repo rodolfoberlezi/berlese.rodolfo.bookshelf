@@ -7,7 +7,7 @@ import {
     FaTwitter,
     FaYoutube,
 } from 'react-icons/fa'
-import { socialNetworks } from '../utils/links.json'
+import { socialNetworks } from '../../utils/links.json'
 
 const SocialNetworks = ({
     directionFlow = 'row',

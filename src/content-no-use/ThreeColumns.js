@@ -8,18 +8,14 @@ import {
     Stack,
     Text,
 } from '@chakra-ui/react'
-
 import TranslatedHeading from '../components/TranslatedHeading'
-
 import bookCover from '../images/bookCovers/mainCover.jpg'
 
 const ThreeColumns = () => {
     return (
         <Container maxW='container.lg' width={'100%'}>
             <Center mt={'1em'} mb={'3em'}>
-                <TranslatedHeading
-                    text={'Pronto para exalar sua alma?'}
-                ></TranslatedHeading>
+                <TranslatedHeading text={'Pronto para exalar sua alma?'} />
             </Center>
             <Flex
                 width={'100%'}
@@ -30,7 +26,7 @@ const ThreeColumns = () => {
                     <TranslatedHeading
                         props={{ fontSize: '1.75rem' }}
                         text={'Acompanhe'}
-                    ></TranslatedHeading>
+                    />
                     <Text>
                         "Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the
@@ -52,13 +48,13 @@ const ThreeColumns = () => {
                     </Text>
                 </Stack>
                 <Box maxWidth={{ base: '100%', md: '35%' }}>
-                    <Image width={'100%'} src={bookCover}></Image>
+                    <Image width={'100%'} src={bookCover} />
                 </Box>
                 <Stack width={{ base: '100%', md: '30%' }}>
                     <TranslatedHeading
                         props={{ fontSize: '1.75rem' }}
                         text={'Explore'}
-                    ></TranslatedHeading>
+                    />
                     <Text>
                         "Lorem Ipsum is simply dummy text of the printing and
                         typesetting industry. Lorem Ipsum has been the

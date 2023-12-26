@@ -4,13 +4,15 @@ import { Container } from '@chakra-ui/react'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
 import Header from '../components/Header.js'
 import Menu from '../components/Menu.js'
-import Footer from '../components/Footer.js'
+import Footer from '../components/Footer/index.js'
 import AuthorApresentation from '../content/AuthorApresentation.js'
-import HeroBanner from '../content/HeroBanner.js'
+import HeroBanner from '../content-no-use/HeroBanner.js'
 import NosceTeIpsum from '../content/NosceTeIpsum.js'
-import ThreeColumns from '../content/ThreeColumns.js'
-import '../styles/global.css'
+import ThreeColumns from '../content-no-use/ThreeColumns.js'
 import FollowMe from '../content/FollowMe.js'
+import WhatIsFreedom from '../content/WhatIsFreedom.js'
+
+import '../styles/global.css'
 
 const IndexPage = () => {
     useTranslation()
@@ -22,10 +24,13 @@ const IndexPage = () => {
                 <Header />
                 <NosceTeIpsum />
                 <AuthorApresentation />
+                <WhatIsFreedom />
+
                 {/*/ ou o que eh ser livre HeroBanner // apresenta power heart */}
                 {/* <HeroBanner />
                 <ThreeColumns /> */}
                 {/*/ me siga // me apoie - compra ou doacao */}
+
                 <FollowMe />
                 <Footer />
             </Container>
