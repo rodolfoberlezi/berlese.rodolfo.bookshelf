@@ -6,13 +6,14 @@ import Header from '../components/Header.js'
 import Menu from '../components/Menu.js'
 import Footer from '../components/Footer/index.js'
 import AuthorApresentation from '../content/AuthorApresentation.js'
-// import HeroBanner from '../content-no-use/HeroBanner.js'
 import NosceTeIpsum from '../content/NosceTeIpsum.js'
-// import ThreeColumns from '../content-no-use/ThreeColumns.js'
 import FollowMe from '../content/FollowMe.js'
 import WhatIsFreedom from '../content/WhatIsFreedom.js'
 import TheSaga from '../content/TheSaga.js'
 import '../styles/global.css'
+
+// import HeroBanner from '../content-no-use/HeroBanner.js'
+// import ThreeColumns from '../content-no-use/ThreeColumns.js'
 
 const IndexPage = () => {
     useTranslation()

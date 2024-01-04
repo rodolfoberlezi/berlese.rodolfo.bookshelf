@@ -7,6 +7,7 @@ import { FaAmazon, FaTwitter, FaYoutube } from 'react-icons/fa'
 const FollowMe = () => {
     return (
         <Center
+            id='contact'
             alignItems='center'
             backgroundColor='black'
             borderRadius={10}

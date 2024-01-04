@@ -6,6 +6,7 @@ import author from '../images/author/cafezinho.png'
 const AuthorApresentation = () => {
     return (
         <Center
+            id='about'
             alignItems='center'
             backgroundColor='black'
             borderRadius={10}
