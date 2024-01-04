@@ -6,12 +6,12 @@ import Header from '../components/Header.js'
 import Menu from '../components/Menu.js'
 import Footer from '../components/Footer/index.js'
 import AuthorApresentation from '../content/AuthorApresentation.js'
-import HeroBanner from '../content-no-use/HeroBanner.js'
+// import HeroBanner from '../content-no-use/HeroBanner.js'
 import NosceTeIpsum from '../content/NosceTeIpsum.js'
-import ThreeColumns from '../content-no-use/ThreeColumns.js'
+// import ThreeColumns from '../content-no-use/ThreeColumns.js'
 import FollowMe from '../content/FollowMe.js'
 import WhatIsFreedom from '../content/WhatIsFreedom.js'
-
+import TheSaga from '../content/TheSaga.js'
 import '../styles/global.css'
 
 const IndexPage = () => {
@@ -25,13 +25,17 @@ const IndexPage = () => {
                 <NosceTeIpsum />
                 <AuthorApresentation />
                 <WhatIsFreedom />
+                <TheSaga />
 
-                {/*/ ou o que eh ser livre HeroBanner // apresenta power heart */}
-                {/* <HeroBanner />
-                <ThreeColumns /> */}
-                {/*/ me siga // me apoie - compra ou doacao */}
+                {/* sinopse power heart - modal de cada livro */}
+                {/* chamada */}
+                {/* acompanhe os personagens */}
+                {/* explore */}
+                {/* krian */}
+                {/* avaliações */}
 
                 <FollowMe />
+                {/* me apoie - compra ou doacao */}
                 <Footer />
             </Container>
         </>

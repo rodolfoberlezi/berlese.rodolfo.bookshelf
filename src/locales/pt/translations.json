@@ -12,15 +12,17 @@
     "Vontade": "Vontade",
     "NosceTeIpsum": "\"Conhece-te a ti mesmo\"",
     "WhatIsFreedom": "O que é ser Livre?",
-    "Saga": "A Saga",
-    "PH1": "A Descoberta da Alma",
-    "PH2": "O Livro da Megabeta",
-    "PH3": "A Fronteira dos Sonhos",
+    "thesaga.title": "A Saga",
+    "thesaga.ph1": "A Descoberta da Alma",
+    "thesaga.ph2": "O Livro da Megabeta",
+    "thesaga.ph3": "A Fronteira dos Sonhos",
+    "thesaga.actionButton": "Leia Agora",
+    "thesaga.disabledButton": "Em breve",
     "EmptyInside": "Já sentiu aquele Vazio no peito?",
     "SubMenu1": "POWER HEART",
     "SubMenu1Text": "Mercenários e seres exilados contra algozes. A liberdade e os poderes do coração e da alma esta em jogo.",
     "Follow": "Siga",
     "WhoAmIP1": "nasceu em 1995, crescendo cercado por jogos online, mangás, animes, jogos de cartas e livros, sempre imergindo na imaginação desses universos até começar a criar seus próprios ao final do ensino médio. Formado em Ciência da Computação, busca expressar através da escrita suas agonias internas. Além disso, escreve aquilo que gostaria de ler em livros: lutas emocionantes como nos quadrinhos japoneses.",
     "WhoAmIP2": "Power Heart é sua primeira obra, contando a saga de Krian, o garoto virgem, que descobre um mundo de mercenários, algozes, fadas e poderes da alma que ocasionarão batalhas épicas enquanto busca seu primeiro beijo!",
-    "FooterRights": "Todos direitos reservados."
+    "footer.allRights": "Todos direitos reservados."
 }

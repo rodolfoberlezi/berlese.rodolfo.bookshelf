@@ -22,7 +22,7 @@ const Footer = () => {
             <Link href='/'>
                 <Image boxSize='50px' src={rbLogo} />
             </Link>
-            <TranslatedLabel text='FooterRights' />
+            <TranslatedLabel text='footer.allRights' />
             <SocialNetworks sizeButton='sm' />
         </Flex>
     )
