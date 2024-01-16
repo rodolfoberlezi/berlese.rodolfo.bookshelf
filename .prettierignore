@@ -1,9 +1,12 @@
 **/node_modules
 **/images
-**/.cache
-**/public
 **/dist
 
 **/.git
 **/.svn
 **/.hg
+
+.cache
+package.json
+package-lock.json
+public

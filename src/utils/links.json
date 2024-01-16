@@ -1,15 +1,15 @@
 {
-    "powerHeart": {
-        "ph1Kindle": "https://www.amazon.com.br/Power-Heart-Recomeço-Rodolfo-Berlezi-ebook/dp/B0841ND4B1/ref=sr_1_1",
-        "ph1CommonCover": "",
-        "ph1HardCover": ""
-    },
-    "socialNetworks": {
-        "amazon": "https://www.amazon.com.br/kindle-dbs/entity/author/B08ND3G5RY?ref_=dbs_p_ebk_r00_abau_000000",
-        "facebook": "https://www.facebook.com/rodolfopowerheart/",
-        "instagram": "https://www.instagram.com/rodolfoberlese/",
-        "twitter": "https://twitter.com/rodolfoberlese/",
-        "youtube": "https://www.youtube.com/channel/UCjnBm9RnjvdLC3ni6olOz8g",
-        "recommendedVideo": ""
-    }
+  "powerHeart": {
+    "ph1Kindle": "https://www.amazon.com.br/Power-Heart-Recomeço-Rodolfo-Berlezi-ebook/dp/B0841ND4B1/ref=sr_1_1",
+    "ph1CommonCover": "",
+    "ph1HardCover": ""
+  },
+  "socialNetworks": {
+    "amazon": "https://www.amazon.com.br/kindle-dbs/entity/author/B08ND3G5RY?ref_=dbs_p_ebk_r00_abau_000000",
+    "facebook": "https://www.facebook.com/rodolfopowerheart/",
+    "instagram": "https://www.instagram.com/rodolfoberlese/",
+    "twitter": "https://twitter.com/rodolfoberlese/",
+    "youtube": "https://www.youtube.com/channel/UCjnBm9RnjvdLC3ni6olOz8g",
+    "recommendedVideo": ""
+  }
 }
