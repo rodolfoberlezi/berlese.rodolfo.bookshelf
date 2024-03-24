@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Center, Container, Flex, Heading, Image, Link, Stack } from '@chakra-ui/react'
+import { Button, Center, Image, Link, Stack } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
 import TranslatedHeading from '../components/TranslatedHeading'
 import { powerHeart } from '../utils/links.json'
@@ -32,7 +32,7 @@ const TheSaga = () => {
       <Center justifyContent="space-evenly">
         {books.map((book) => {
           return (
-            <Stack gap={5}>
+            <Stack key={book.title} gap={5}>
               <Center>
                 <Image width={40} src={bookWithEffects} />
               </Center>

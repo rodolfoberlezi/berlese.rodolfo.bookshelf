@@ -14,9 +14,6 @@ import Characters from '../content/Characters.js'
 
 import '../styles/global.css'
 
-// import HeroBanner from '../content-no-use/HeroBanner.js'
-// import ThreeColumns from '../content-no-use/ThreeColumns.js'
-
 const IndexPage = () => {
   useTranslation()
 
@@ -25,22 +22,15 @@ const IndexPage = () => {
       <Menu />
       <Container maxW="container.full" p={0} bg={'white'} centerContent>
         <Header />
-        <NosceTeIpsum />
-        <AuthorApresentation />
         <WhatIsFreedom />
+        <AuthorApresentation />
         <TheSaga />
-
         <Characters />
-
-        {/* sinopse power heart - modal de cada livro */}
         {/* chamada */}
-        {/* acompanhe os personagens */}
-        {/* explore */}
-        {/* krian */}
         {/* avaliações */}
-
+        {/* chamada */}
         <FollowMe />
-        {/* me apoie - compra ou doacao */}
+        <NosceTeIpsum />
         <Footer />
       </Container>
     </>
