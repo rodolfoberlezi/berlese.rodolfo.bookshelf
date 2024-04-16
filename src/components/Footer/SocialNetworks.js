@@ -1,12 +1,11 @@
 import React from 'react'
 import { Flex, Link, IconButton } from '@chakra-ui/react'
-import { FaAmazon, FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaAmazon, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { socialNetworks } from '../../utils/links.json'
 
 const SocialNetworks = ({ directionFlow = 'row', sizeButton = 'lg', marginAround = '5' }) => {
   return (
     <Flex
-      minWidth={200}
       minH={{
         base: '150',
         sm: '50',
@@ -17,7 +16,7 @@ const SocialNetworks = ({ directionFlow = 'row', sizeButton = 'lg', marginAround
       }}
       direction={directionFlow}
       align="center"
-      justifyContent="space-between"
+      gap={2}
     >
       <Link href={socialNetworks.amazon} margin={directionFlow !== 'row' ? marginAround : '0'} isExternal>
         <IconButton size={sizeButton} aria-label="Amazon" colorScheme="yellow" icon={<FaAmazon />} />
@@ -30,9 +29,6 @@ const SocialNetworks = ({ directionFlow = 'row', sizeButton = 'lg', marginAround
       </Link>
       <Link href={socialNetworks.instagram} margin={directionFlow !== 'row' ? marginAround : '0'} isExternal>
         <IconButton size={sizeButton} aria-label="Instagram" colorScheme="pink" icon={<FaInstagram />} />
-      </Link>
-      <Link href={socialNetworks.facebook} margin={directionFlow !== 'row' ? marginAround : '0'} isExternal>
-        <IconButton size={sizeButton} aria-label="Facebook" colorScheme="facebook" icon={<FaFacebook />} />
       </Link>
     </Flex>
   )
