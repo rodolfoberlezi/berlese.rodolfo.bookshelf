@@ -4,7 +4,8 @@ import TranslatedLabel from '../components/TranslatedLabel'
 import TranslatedHeading from '../components/TranslatedHeading'
 import { powerHeart } from '../utils/links.json'
 import bookWithEffects from '../images/bookCovers/bookWithEffects.png'
-import phLogo from '../images/power-heart/logo-ph-cor.png'
+import phLogoPB from '../images/power-heart/logo-ph-pb.png'
+import phLogoCor from '../images/power-heart/logo-ph-cor.png'
 
 const AboutSaga = () => (
   <>
@@ -21,7 +22,10 @@ const AboutSaga = () => (
       <TranslatedHeading text="Uma história de um Garoto com um Coração" />
     </Center>
     <Center width="100%" height="80vh" px={20}>
-      <Image src={phLogo} />
+      <Image src={phLogoPB} />
+    </Center>
+    <Center width="100%" height="80vh" px={20}>
+      <Image src={phLogoCor} />
     </Center>
   </>
 )
