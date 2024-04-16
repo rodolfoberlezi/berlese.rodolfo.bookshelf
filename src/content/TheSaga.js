@@ -4,6 +4,7 @@ import TranslatedLabel from '../components/TranslatedLabel'
 import TranslatedHeading from '../components/TranslatedHeading'
 import { powerHeart } from '../utils/links.json'
 import bookWithEffects from '../images/bookCovers/bookWithEffects.png'
+import bookComingSoon from '../images/bookCovers/book_coming_soon-no-bg.png'
 import phLogoPB from '../images/power-heart/logo-ph-pb.png'
 import phLogoCor from '../images/power-heart/logo-ph-cor.png'
 
@@ -36,14 +37,17 @@ const TheSaga = () => {
       title: 'thesaga.ph1',
       launched: true,
       link: powerHeart.ph1Kindle,
+      image: bookWithEffects,
     },
     {
       title: 'thesaga.ph2',
       launched: false,
+      image: bookComingSoon,
     },
     {
       title: 'thesaga.ph3',
       launched: false,
+      image: bookComingSoon,
     },
   ]
 
@@ -61,7 +65,7 @@ const TheSaga = () => {
             return (
               <Stack key={book.title} gap={5}>
                 <Center>
-                  <Image width={40} src={bookWithEffects} />
+                  <Image width={40} src={book.image} />
                 </Center>
                 <Center>
                   <strong>
