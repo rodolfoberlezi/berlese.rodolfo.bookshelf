@@ -39,7 +39,7 @@ const Menu = () => {
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
           <Center>
             <Link href="/">
-              <Image boxSize="50px" src={rbLogo}></Image>
+              <Image boxSize="50px" src={rbLogo} />
             </Link>
           </Center>
 
