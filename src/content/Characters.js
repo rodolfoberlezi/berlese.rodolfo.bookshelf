@@ -29,7 +29,7 @@ const Characters = () => {
 
   return (
     <Stack id="characters" width={['100vw', '80vw']} minHeight={410} gap={10} my={10} py={2} mx="auto">
-      <Center>
+      <Center mb={10}>
         <TranslatedHeading text={'characters.title'} />
       </Center>
       <Center alignItems="start" justifyContent="space-evenly" fontSize={24}>

@@ -22,10 +22,10 @@ const AboutSaga = () => (
     <Center width="100%" height="90vh">
       <TranslatedHeading text="Uma história de um Garoto com um Coração" />
     </Center>
-    <Center width="100%" height="80vh" px={20}>
+    <Center width="100%" height="80vh" px={20} mb={2}>
       <Image src={phLogoPB} />
     </Center>
-    <Center width="100%" height="80vh" px={20}>
+    <Center width="100%" height="80vh" px={20} mb={2}>
       <Image src={phLogoCor} />
     </Center>
   </>
@@ -57,9 +57,14 @@ const TheSaga = () => {
     <>
       <AboutSaga />
       <Stack id="books" width={['100vw', '80vw']} minHeight={510} gap={10} my={10} py={2} mx="auto">
-        <Center>
-          <TranslatedHeading text={'thesaga.title'} />
-        </Center>
+        <Stack mb={10}>
+          <Center>
+            <TranslatedHeading text={'thesaga.title'} />
+          </Center>
+          <Center>
+            <TranslatedLabel text={'100% disponível na Amazon'} />
+          </Center>
+        </Stack>
         <Center justifyContent="space-evenly">
           {books.map((book) => {
             return (
