@@ -5,7 +5,7 @@ import { FcKindle } from 'react-icons/fc'
 import TranslatedLabel from './TranslatedLabel'
 import { powerHeart } from '../utils/links.json'
 
-const AmazonButtons = () => {
+const AmazonButton = () => {
   const styleProps = {
     bg: 'linear-gradient(180deg, #F6C587 0%, #E99221 100%)',
     p: 8,
@@ -44,4 +44,4 @@ const AmazonButtons = () => {
   )
 }
 
-export default AmazonButtons
+export default AmazonButton

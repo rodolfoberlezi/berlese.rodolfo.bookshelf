@@ -11,6 +11,8 @@ import FollowMe from '../content/FollowMe.js'
 import WhatIsFreedom from '../content/WhatIsFreedom.js'
 import TheSaga from '../content/TheSaga.js'
 import Characters from '../content/Characters.js'
+import Ratings from '../content/Ratings.js'
+import ActionButton from '../components/ActionButton.js'
 
 import '../styles/global.css'
 
@@ -26,9 +28,9 @@ const IndexPage = () => {
         <AuthorApresentation />
         <TheSaga />
         <Characters />
-        {/* chamada */}
-        {/* avaliações */}
-        {/* chamada */}
+        <ActionButton label={'saiba mais'} />
+        <Ratings />
+        <ActionButton label={'leia mais'} />
         <FollowMe />
         <NosceTeIpsum />
         <Footer />
