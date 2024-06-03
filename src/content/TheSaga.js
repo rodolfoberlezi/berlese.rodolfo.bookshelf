@@ -10,22 +10,22 @@ import phLogoCor from '../images/power-heart/logo-ph-cor.png'
 
 const AboutSaga = () => (
   <>
-    <Center width="100%" height="80vh">
+    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
       <TranslatedHeading text="Apresentando" />
     </Center>
-    <Center width="100%" height="80vh">
+    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
       <TranslatedHeading text="Uma história sobre a Liberdade e o Tempo" />
     </Center>
-    <Center width="100%" height="80vh">
+    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
       <TranslatedHeading text="Uma história de Poderes da Alma" />
     </Center>
-    <Center width="100%" height="90vh">
+    <Center maxWidth="90%" textAlign="center" mx={2} height="90vh">
       <TranslatedHeading text="Uma história de um Garoto com um Coração" />
     </Center>
-    <Center width="100%" height="80vh" px={20} mb={2}>
+    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh" px={20} mb={2}>
       <Image src={phLogoPB} />
     </Center>
-    <Center width="100%" height="80vh" px={20} mb={2}>
+    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh" px={20} mb={2}>
       <Image src={phLogoCor} />
     </Center>
   </>
@@ -56,8 +56,8 @@ const TheSaga = () => {
   return (
     <>
       <AboutSaga />
-      <Stack id="books" width={['100vw', '80vw']} minHeight={510} gap={10} my={10} py={2} mx="auto">
-        <Stack mb={10}>
+      <Stack id="books" width={{ md: '100vw', lg: '80vw' }} minHeight={510} gap={10} my={10} py={2} mx="auto">
+        <Stack mb={{ md: 0, lg: 10 }}>
           <Center>
             <TranslatedHeading text={'thesaga.title'} />
           </Center>
@@ -65,10 +65,10 @@ const TheSaga = () => {
             <TranslatedLabel text={'100% disponível na Amazon'} />
           </Center>
         </Stack>
-        <Center justifyContent="space-evenly">
+        <Center flexDirection={{ md: 'column', lg: 'row' }} justifyContent="space-evenly">
           {books.map((book) => {
             return (
-              <Stack key={book.title} gap={5}>
+              <Stack key={book.title} gap={5} mt={{ md: 20, lg: 0 }}>
                 <Center>
                   <Image width={40} src={book.image} />
                 </Center>

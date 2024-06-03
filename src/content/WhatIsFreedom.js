@@ -19,13 +19,17 @@ const WhatIsFreedomForCharacters = () => (
     <Box width="50%" fontSize={24}>
       <Center flexDirection="column" height="100%" gap={4}>
         <TranslatedHeading text="Para Krian" />
-        <TranslatedLabel text={'A liberdade esta relacionada com seu desejo.'} />
+        <Box textAlign="center">
+          <TranslatedLabel text={'A liberdade esta relacionada com seu desejo.'} />
+        </Box>
       </Center>
     </Box>
     <Box backgroundColor="black" color="white" width="50%" fontSize={24}>
       <Center flexDirection="column" height="100%" gap={4}>
         <TranslatedHeading text="Para Olexa" />
-        <TranslatedLabel text={'A liberdade esta relacionada com seu livre arbítrio.'} />
+        <Box textAlign="center">
+          <TranslatedLabel text={'A liberdade esta relacionada com seu livre arbítrio.'} />
+        </Box>
       </Center>
     </Box>
   </Stack>
@@ -34,9 +38,9 @@ const WhatIsFreedomForCharacters = () => (
 const WhatIsFreedom = () => {
   return (
     <>
-      <Box backgroundColor="black" height={510} width="100%" mt={2}>
+      <Box backgroundColor="black" height={510} width="100%">
         <Stack alignItems="center" justifyContent="center" color="white" fontSize={[23, 33]} height="100%">
-          <Heading fontSize={[43, 66]} variant="h2">
+          <Heading fontSize={[43, 66]} variant="h2" textAlign="center">
             <TranslatedLabel text={'WhatIsFreedom'} />
           </Heading>
         </Stack>

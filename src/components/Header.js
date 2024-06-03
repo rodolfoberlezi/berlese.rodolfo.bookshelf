@@ -4,8 +4,8 @@ import titleImageWithSentences from '../images/header/name-title-action.png'
 
 const HeaderLogo = () => {
   return (
-    <Container maxWidth="container.xl">
-      <Box mt={['60px', '40px', '0px']} height={['auto', '75vh', '90vh']}>
+    <Container maxWidth="container.lg">
+      <Box mt={['60px', '40px', '0px']}>
         <Image src={titleImageWithSentences} alt="Rodolfo Berlese, essência, liberdade e vontade através de histórias." objectFit={'cover'} />
       </Box>
     </Container>
