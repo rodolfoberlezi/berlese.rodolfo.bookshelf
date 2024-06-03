@@ -15,7 +15,7 @@ const LanguagesMenu = () => {
     <Center direction="column">
       <Select
         minWidth={200}
-        placeholder={<TranslatedLabel text={'LanguageCommand'}></TranslatedLabel>}
+        placeholder={<TranslatedLabel text={'language.command'}></TranslatedLabel>}
         icon={<GrLanguage />}
         onChange={(event) => onChangeLanguage(event.target.value)}
       >

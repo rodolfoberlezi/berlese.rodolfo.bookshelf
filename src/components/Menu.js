@@ -176,23 +176,22 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
   {
-    label: 'Menu1',
+    label: 'menu.1',
     href: '#about',
   },
   {
-    label: 'Menu2',
+    label: 'menu.2',
     href: '#books',
     // children: [
     //   {
-    //     label: "POWER HEART",
-    //     subLabel:
-    //       "Mercenários e seres exilados contra algozes. A liberdade e os poderes do coração e da alma esta em jogo.",
+    //     label: "sub.menu",
+    //     subLabel: "sub.menu.text",
     //     href: "/livros/",
     //   },
     // ],
   },
   {
-    label: 'Menu3',
+    label: 'menu.3',
     href: '#contact',
   },
 ]

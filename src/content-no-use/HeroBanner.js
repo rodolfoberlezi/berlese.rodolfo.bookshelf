@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Center, Container, Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
+import { Center, Container, Flex, Image, Stack, Text } from '@chakra-ui/react'
 
 import bookEffect from '../images/bookCovers/bookWithEffects.png'
 import AmazonButtons from '../components/AmazonButtons'

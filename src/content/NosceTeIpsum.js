@@ -9,7 +9,7 @@ const NosceTeIpsum = () => {
         <Heading fontSize={[43, 66]} variant="h2">
           Nosce te Ipsum
         </Heading>
-        <TranslatedLabel text={'NosceTeIpsum'} />
+        <TranslatedLabel text={'nosce.te.ipsum'} />
       </Stack>
     </Box>
   )

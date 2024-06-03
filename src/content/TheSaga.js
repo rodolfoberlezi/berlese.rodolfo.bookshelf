@@ -11,16 +11,16 @@ import phLogoCor from '../images/power-heart/logo-ph-cor.png'
 const AboutSaga = () => (
   <>
     <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
-      <TranslatedHeading text="Apresentando" />
+      <TranslatedHeading text="aboutsaga.presenting" />
     </Center>
     <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
-      <TranslatedHeading text="Uma história sobre a Liberdade e o Tempo" />
+      <TranslatedHeading text="aboutsaga.time" />
     </Center>
     <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
-      <TranslatedHeading text="Uma história de Poderes da Alma" />
+      <TranslatedHeading text="aboutsaga.soul" />
     </Center>
     <Center maxWidth="90%" textAlign="center" mx={2} height="90vh">
-      <TranslatedHeading text="Uma história de um Garoto com um Coração" />
+      <TranslatedHeading text="aboutsaga.heart" />
     </Center>
     <Center maxWidth="90%" textAlign="center" mx={2} height="80vh" px={20} mb={2}>
       <Image src={phLogoPB} />
@@ -62,7 +62,7 @@ const TheSaga = () => {
             <TranslatedHeading text={'thesaga.title'} />
           </Center>
           <Center>
-            <TranslatedLabel text={'100% disponível na Amazon'} />
+            <TranslatedLabel text={'thesage.available'} />
           </Center>
         </Stack>
         <Center flexDirection={{ md: 'column', lg: 'row' }} justifyContent="space-evenly">

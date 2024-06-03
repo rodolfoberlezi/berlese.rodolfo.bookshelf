@@ -16,9 +16,9 @@ const AuthorApresentation = () => {
           </Heading>
           <Stack fontSize={[13, 18]}>
             <Box mb={1.5}>
-              <TranslatedLabel text="WhoAmIP1" />
+              <TranslatedLabel text="who.am.i.p1" />
             </Box>
-            <TranslatedLabel text="WhoAmIP2" />
+            <TranslatedLabel text="who.am.i.p2" />
           </Stack>
         </Stack>
       </Stack>

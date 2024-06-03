@@ -11,7 +11,7 @@ const FollowMe = () => {
         <Stack direction={{ base: 'column', md: 'row' }} gap={20}>
           <Stack>
             <Center>
-              <TranslatedLabel text="Essencia" />
+              <TranslatedLabel text="equilibrio" />
             </Center>
             <Center>
               <Link href={socialNetworks.youtube} isExternal>
@@ -21,7 +21,7 @@ const FollowMe = () => {
           </Stack>
           <Stack mx={5}>
             <Center>
-              <TranslatedLabel text="Liberdade" />
+              <TranslatedLabel text="liberdade" />
             </Center>
             <Center>
               <Link href={socialNetworks.twitter} isExternal>
@@ -31,7 +31,7 @@ const FollowMe = () => {
           </Stack>
           <Stack>
             <Center>
-              <TranslatedLabel text="Vontade" />
+              <TranslatedLabel text="transformacao" />
             </Center>
             <Center>
               <Link href={socialNetworks.amazon} isExternal>

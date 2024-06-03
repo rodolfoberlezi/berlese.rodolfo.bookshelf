@@ -28,9 +28,9 @@ const IndexPage = () => {
         <AuthorApresentation />
         <TheSaga />
         <Characters />
-        <ActionButton label={'saiba mais'} />
+        <ActionButton label={'button.knowmore'} />
         <Ratings />
-        <ActionButton label={'leia mais'} />
+        <ActionButton label={'button.readmore'} />
         <FollowMe />
         <NosceTeIpsum />
         <Footer />
