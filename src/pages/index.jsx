@@ -14,7 +14,7 @@ import Characters from '../content/Characters.js'
 import Ratings from '../content/Ratings.js'
 import ActionButton from '../components/ActionButton.js'
 
-import '../styles/global.css'
+import '../styles/global.scss'
 
 const IndexPage = () => {
   useTranslation()
