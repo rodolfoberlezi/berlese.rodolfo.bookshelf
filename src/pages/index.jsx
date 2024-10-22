@@ -23,7 +23,7 @@ const IndexPage = () => {
     <>
       <Menu />
       <Container maxW="container.full" p={0} bg={'white'} centerContent>
-        <Header />
+        {/* <Header /> */}
         <WhatIsFreedom />
         <AuthorApresentation />
         <TheSaga />
