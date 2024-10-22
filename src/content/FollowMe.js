@@ -6,10 +6,10 @@ import { FaAmazon, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const FollowMe = () => {
   return (
-    <Center id="contact" alignItems="center" backgroundColor="black" borderRadius={10} minHeight={410} width={['100vw', '80vw']} my={2} py={2}>
+    <Center id="followMe" alignItems="center" backgroundColor="black" borderRadius={10} minHeight={410} width={['100vw', '80vw']} my={2} py={2}>
       <Stack color="white" maxWidth="90%" fontSize={[23, 33]} height="100%" mx="auto">
-        <Stack direction={{ base: 'column', md: 'row' }} gap={20}>
-          <Stack>
+        <Stack direction={{ base: 'column', md: 'row' }}>
+          <Stack width={300}>
             <Center>
               <TranslatedLabel text="equilibrio" />
             </Center>
@@ -19,7 +19,7 @@ const FollowMe = () => {
               </Link>
             </Center>
           </Stack>
-          <Stack mx={5}>
+          <Stack width={300}>
             <Center>
               <TranslatedLabel text="liberdade" />
             </Center>
@@ -29,7 +29,7 @@ const FollowMe = () => {
               </Link>
             </Center>
           </Stack>
-          <Stack>
+          <Stack width={300}>
             <Center>
               <TranslatedLabel text="transformacao" />
             </Center>
@@ -40,7 +40,7 @@ const FollowMe = () => {
             </Center>
           </Stack>
         </Stack>
-        <Center mt={4}>
+        <Center mt={5}>
           <Heading variant="h3">@rodolfoberlese</Heading>
         </Center>
       </Stack>
