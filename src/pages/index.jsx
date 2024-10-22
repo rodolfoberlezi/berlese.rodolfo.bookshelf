@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Container } from '@chakra-ui/react'
 import { useTranslation } from 'gatsby-plugin-react-i18next'
-import Header from '../components/Header.js'
+// import Header from '../components/Header.js'
 import Menu from '../components/Menu.js'
 import Footer from '../components/Footer/index.js'
 import AuthorApresentation from '../content/AuthorApresentation.js'
@@ -13,7 +13,6 @@ import TheSaga from '../content/TheSaga.js'
 import Characters from '../content/Characters.js'
 import Ratings from '../content/Ratings.js'
 import ActionButton from '../components/ActionButton.js'
-
 import '../styles/global.scss'
 
 const IndexPage = () => {
