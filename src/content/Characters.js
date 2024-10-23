@@ -30,11 +30,11 @@ const Characters = () => {
   return (
     <Stack id="characters" width={['100vw', '80vw']} minHeight={410} gap={10} my={10} py={2} mx="auto">
       <Center mb={10}>
-        <TranslatedHeading text={'characters.title'} />
+        <TranslatedHeading props={{ fontSize: 32 }} text={'characters.title'} />
       </Center>
-      <Center alignItems="start" justifyContent="space-evenly" fontSize={24}>
+      <Center flexDirection={{ sm: 'column', lg: 'row' }} justifyContent="space-evenly" fontSize={24}>
         {charsDetails.map((char) => (
-          <Stack key={char.name} gap={2} mx={3} textAlign="center">
+          <Stack key={char.name} gap={2} m={5} textAlign="center">
             {/* <Center>
                 <Image width={40} src={char.icon} />
               </Center> */}

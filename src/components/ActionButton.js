@@ -10,6 +10,7 @@ const ActionButton = ({ link, label }) => {
     fontSize: 24,
     color: 'black',
     border: 3,
+    borderRadius: 10,
     borderStyle: 'solid',
     borderColor: 'orange.200',
     _hover: {
@@ -20,7 +21,7 @@ const ActionButton = ({ link, label }) => {
   }
 
   return (
-    <Center>
+    <Center mt={10} mb={20}>
       <Link href={link} _hover={{ textDecoration: 'none' }} isExternal>
         <Button {...styleProps}>
           <TranslatedLabel props={{ as: 'span' }} text={label} />
