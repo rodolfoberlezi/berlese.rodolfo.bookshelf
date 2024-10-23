@@ -18,8 +18,8 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import LanguagesMenu from './LanguagesMenu.js'
-import TranslatedLabel from './TranslatedLabel.js'
-import rbLogo from '../images/header/rb-circle.png'
+import TranslatedLabel from '../TranslatedLabel.js'
+import rbLogo from '../../images/header/rb-circle.png'
 
 const Menu = () => {
   const { isOpen, onToggle } = useDisclosure()

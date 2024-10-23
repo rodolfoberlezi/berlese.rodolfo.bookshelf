@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Center, Flex, Link, Stack, Text } from '@chakra-ui/react'
 import { FaBook } from 'react-icons/fa'
 import { FcKindle } from 'react-icons/fc'
-import TranslatedLabel from './TranslatedLabel'
+import TranslatedLabel from '../components/TranslatedLabel'
 import { powerHeart } from '../utils/links.json'
 
 const AmazonButton = () => {

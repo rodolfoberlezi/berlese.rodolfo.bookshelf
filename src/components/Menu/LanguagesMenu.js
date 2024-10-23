@@ -2,7 +2,7 @@ import React from 'react'
 import { useI18next } from 'gatsby-plugin-react-i18next'
 import { Select, Center } from '@chakra-ui/react'
 import { GrLanguage } from 'react-icons/gr'
-import TranslatedLabel from './TranslatedLabel'
+import TranslatedLabel from '../TranslatedLabel'
 
 const LanguagesMenu = () => {
   const { languages, originalPath, changeLanguage } = useI18next()
