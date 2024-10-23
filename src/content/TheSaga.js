@@ -53,8 +53,8 @@ const TheSaga = () => {
   return (
     <>
       <AboutSaga />
-      <Stack id="books" width={{ lg: '80vw' }} minHeight={510} gap={10} my={10} py={2} mx="auto">
-        <Stack mb={20}>
+      <Stack id="books" width={{ lg: '80vw' }} minHeight={510} gap={10} mt={20} py={2} mx="auto">
+        <Stack mb={10}>
           <Center>
             <TranslatedHeading props={{ fontSize: 56 }} text={'thesaga.title'} />
           </Center>
@@ -82,6 +82,7 @@ const TheSaga = () => {
                     bg={amazonButtonColor}
                     fontSize={26}
                     fontWeight={600}
+                    p={8}
                     border={3}
                     borderRadius={10}
                     borderStyle={'solid'}

@@ -6,9 +6,9 @@ import { amazonButtonColor } from '../utils/constants'
 const ActionButton = ({ link, label }) => {
   const styleProps = {
     bg: amazonButtonColor,
-    p: 8,
+    p: 10,
     width: '100%',
-    fontSize: 24,
+    fontSize: 32,
     color: 'black',
     border: 3,
     borderRadius: 10,

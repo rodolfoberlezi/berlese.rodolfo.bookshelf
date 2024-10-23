@@ -1,5 +1,5 @@
 import React from 'react'
-import { Center, Stack } from '@chakra-ui/react'
+import { Center, Grid, GridItem, Stack } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
 import TranslatedHeading from '../components/TranslatedHeading'
 
@@ -28,13 +28,13 @@ const Characters = () => {
   ]
 
   return (
-    <Stack id="characters" width={['100vw', '80vw']} minHeight={410} gap={10} my={10} py={2} mx="auto">
-      <Center mb={10}>
+    <Stack id="characters" width={['100vw', '80vw']} minHeight={410} gap={10} mt={40} py={2} mx="auto">
+      <Center mb={5}>
         <TranslatedHeading props={{ fontSize: 56 }} text={'characters.title'} />
       </Center>
-      <Center flexDirection={{ sm: 'column', lg: 'row' }} justifyContent="space-evenly" fontSize={24}>
+      <Grid templateColumns={{ lg: 'repeat(2, 1fr)' }} fontSize={24}>
         {charsDetails.map((char) => (
-          <Stack key={char.name} gap={2} m={5} textAlign="center">
+          <GridItem key={char.name} gap={2} m={5} textAlign="center">
             {/* <Center>
                 <Image width={40} src={char.icon} />
               </Center> */}
@@ -46,9 +46,9 @@ const Characters = () => {
             <Center>
               <TranslatedLabel text={char.description} />
             </Center>
-          </Stack>
+          </GridItem>
         ))}
-      </Center>
+      </Grid>
       <Center flexDirection="row" alignItems="center" textAlign="center" mx="auto" fontSize={24}>
         e muitos outros mercenários em uma luta contra algozes na esperança de salvar as criaturas que vem de Astasy, o mundo exilado, o continente
         das criaturas não humanas como fadas, elfos, anões, selvagens e demônios. Tudo isso, é claro, sem deixarem de cumprir com a realização de seus
