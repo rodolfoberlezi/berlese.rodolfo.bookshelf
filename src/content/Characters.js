@@ -30,7 +30,7 @@ const Characters = () => {
   return (
     <Stack id="characters" width={['100vw', '80vw']} minHeight={410} gap={10} my={10} py={2} mx="auto">
       <Center mb={10}>
-        <TranslatedHeading props={{ fontSize: 32 }} text={'characters.title'} />
+        <TranslatedHeading props={{ fontSize: 56 }} text={'characters.title'} />
       </Center>
       <Center flexDirection={{ sm: 'column', lg: 'row' }} justifyContent="space-evenly" fontSize={24}>
         {charsDetails.map((char) => (
@@ -43,7 +43,7 @@ const Characters = () => {
                 <TranslatedLabel props={{ fontSize: 26 }} text={char.name} />
               </strong>
             </Center>
-            <Center maxWidth={250}>
+            <Center>
               <TranslatedLabel text={char.description} />
             </Center>
           </Stack>

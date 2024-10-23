@@ -6,7 +6,7 @@ import TranslatedHeading from '../components/TranslatedHeading'
 const WhatIsFreedomForAuthor = () => (
   <Stack width="100%" direction="row" height="95vh">
     <Box width="100%" backgroundColor="black" color="white" fontSize={24}>
-      <Center flexDirection="column" height="100%" gap={4}>
+      <Center flexDirection="column" height="100%" gap={4} textAlign={'center'}>
         <TranslatedHeading text="freedom.author" />
         <TranslatedLabel text="freedom.author.text" />
       </Center>
@@ -17,7 +17,7 @@ const WhatIsFreedomForAuthor = () => (
 const WhatIsFreedomForCharacters = () => (
   <Stack width="100%" direction="row" height="95vh">
     <Box width="50%" fontSize={24}>
-      <Center flexDirection="column" height="100%" gap={4}>
+      <Center flexDirection="column" height="100%" gap={4} textAlign={'center'}>
         <TranslatedHeading text="freedom.krian" />
         <Box textAlign="center">
           <TranslatedLabel text="freedom.krian.text" />
@@ -25,7 +25,7 @@ const WhatIsFreedomForCharacters = () => (
       </Center>
     </Box>
     <Box backgroundColor="black" color="white" width="50%" fontSize={24}>
-      <Center flexDirection="column" height="100%" gap={4}>
+      <Center flexDirection="column" height="100%" gap={4} textAlign={'center'}>
         <TranslatedHeading text="freedom.olexa" />
         <Box textAlign="center">
           <TranslatedLabel text="freedom.olexa.text" />

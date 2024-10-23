@@ -10,18 +10,18 @@ import phLogoCor from '../images/power-heart/logo-ph-cor.png'
 const AboutSaga = () => (
   <>
     <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
-      <TranslatedHeading text="aboutsaga.presenting" />
+      <TranslatedHeading props={{ fontSize: 42 }} text="aboutsaga.presenting" />
     </Center>
     <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
-      <TranslatedHeading text="aboutsaga.time" />
+      <TranslatedHeading props={{ fontSize: 42 }} text="aboutsaga.time" />
     </Center>
     <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
-      <TranslatedHeading text="aboutsaga.soul" />
+      <TranslatedHeading props={{ fontSize: 42 }} text="aboutsaga.soul" />
     </Center>
     <Center maxWidth="90%" textAlign="center" mx={2} height="90vh">
-      <TranslatedHeading text="aboutsaga.heart" />
+      <TranslatedHeading props={{ fontSize: 42 }} text="aboutsaga.heart" />
     </Center>
-    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh" px={20} mb={20}>
+    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh" px={{ lg: 20 }} mb={{ lg: 20 }}>
       <Image src={phLogoCor} />
     </Center>
   </>
@@ -52,13 +52,13 @@ const TheSaga = () => {
   return (
     <>
       <AboutSaga />
-      <Stack id="books" width={{ md: '100vw', lg: '80vw' }} minHeight={510} gap={10} my={10} py={2} mx="auto">
-        <Stack mb={{ md: 10, lg: 20 }}>
+      <Stack id="books" width={{ lg: '80vw' }} minHeight={510} gap={10} my={10} py={2} mx="auto">
+        <Stack mb={20}>
           <Center>
-            <TranslatedHeading text={'thesaga.title'} />
+            <TranslatedHeading props={{ fontSize: 56 }} text={'thesaga.title'} />
           </Center>
           <Center>
-            <TranslatedLabel text={'thesage.available'} />
+            <TranslatedLabel props={{ fontSize: 26 }} text={'thesage.available'} />
           </Center>
         </Stack>
         <Center flexDirection={{ sm: 'column', lg: 'row' }} justifyContent="space-evenly">
