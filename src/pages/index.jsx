@@ -29,7 +29,7 @@ const IndexPage = () => {
         <Characters />
         <ActionButton label={'button.knowmore'} />
         <Ratings />
-        <ActionButton label={'button.readmore'} />
+        <ActionButton label={'button.verify'} />
         <FollowMe />
         <NosceTeIpsum />
         <Footer />
