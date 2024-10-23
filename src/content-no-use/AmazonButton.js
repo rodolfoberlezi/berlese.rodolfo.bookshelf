@@ -4,10 +4,11 @@ import { FaBook } from 'react-icons/fa'
 import { FcKindle } from 'react-icons/fc'
 import TranslatedLabel from '../components/TranslatedLabel'
 import { powerHeart } from '../utils/links.json'
+import { amazonButtonColor } from '../utils/constants'
 
 const AmazonButton = () => {
   const styleProps = {
-    bg: 'linear-gradient(180deg, #F6C587 0%, #E99221 100%)',
+    bg: amazonButtonColor,
     p: 8,
     width: '100%',
     fontSize: 24,

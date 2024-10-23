@@ -1,10 +1,11 @@
 import React from 'react'
 import { Button, Link, Center } from '@chakra-ui/react'
 import TranslatedLabel from './TranslatedLabel'
+import { amazonButtonColor } from '../utils/constants'
 
 const ActionButton = ({ link, label }) => {
   const styleProps = {
-    bg: 'linear-gradient(180deg, #F6C587 0%, #E99221 100%)',
+    bg: amazonButtonColor,
     p: 8,
     width: '100%',
     fontSize: 24,

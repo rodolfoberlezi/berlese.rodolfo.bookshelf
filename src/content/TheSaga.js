@@ -6,6 +6,7 @@ import { powerHeart } from '../utils/links.json'
 import bookWithEffects from '../images/bookCovers/bookWithEffects.png'
 import bookComingSoon from '../images/bookCovers/book_coming_soon-no-bg.png'
 import phLogoCor from '../images/power-heart/logo-ph-cor.png'
+import { amazonButtonColor } from '../utils/constants'
 
 const AboutSaga = () => (
   <>
@@ -78,7 +79,7 @@ const TheSaga = () => {
                     width="100%"
                     isDisabled={!book.launched}
                     color="black"
-                    bg="linear-gradient(180deg, #F6C587 0%, #E99221 100%)"
+                    bg={amazonButtonColor}
                     fontSize={26}
                     fontWeight={600}
                     border={3}
