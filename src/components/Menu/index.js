@@ -25,7 +25,7 @@ const Menu = () => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box position={'fixed'} w="100%" borderBottom={'solid'} borderBottomWidth={0.5} borderColor={'black'} zIndex={999}>
+    <Box w="100%" borderBottom={'solid'} borderBottomWidth={0.5} borderColor={'black'} zIndex={999}>
       <Flex bg={'white'} color={'gray.600'} minH={'60px'} py={{ base: 2 }} px={{ base: 8 }} align={'center'}>
         <Flex flex={{ base: 1, md: 'auto' }} ml={{ base: -2 }} display={{ base: 'flex', md: 'none' }}>
           <IconButton
