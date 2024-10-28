@@ -1,7 +1,8 @@
 import React from 'react'
-import { Center, Grid, GridItem, Stack } from '@chakra-ui/react'
+import { Center, Grid, GridItem, Image, Stack } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
 import TranslatedHeading from '../components/TranslatedHeading'
+import poster from '../images/bookCovers/poster.jpg'
 
 const Ratings = () => {
   const ratingsDetails = [
@@ -42,6 +43,9 @@ const Ratings = () => {
           </GridItem>
         ))}
       </Grid>
+      <Center>
+        <Image src={poster} />
+      </Center>
     </Stack>
   )
 }
