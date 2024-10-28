@@ -8,7 +8,9 @@ const WhatIsFreedomForAuthor = () => (
     <Box width="100%" backgroundColor="black" color="white" fontSize={24}>
       <Center flexDirection="column" height="100%" gap={4} textAlign={'center'}>
         <TranslatedHeading text="freedom.author" />
-        <TranslatedLabel text="freedom.author.text" />
+        <Box textAlign="center" px={4}>
+          <TranslatedLabel text="freedom.author.text" />
+        </Box>
       </Center>
     </Box>
   </Stack>
@@ -19,7 +21,7 @@ const WhatIsFreedomForCharacters = () => (
     <Box width="50%" fontSize={24}>
       <Center flexDirection="column" height="100%" gap={4} textAlign={'center'}>
         <TranslatedHeading text="freedom.krian" />
-        <Box textAlign="center">
+        <Box textAlign="center" px={2}>
           <TranslatedLabel text="freedom.krian.text" />
         </Box>
       </Center>
@@ -27,7 +29,7 @@ const WhatIsFreedomForCharacters = () => (
     <Box backgroundColor="black" color="white" width="50%" fontSize={24}>
       <Center flexDirection="column" height="100%" gap={4} textAlign={'center'}>
         <TranslatedHeading text="freedom.olexa" />
-        <Box textAlign="center">
+        <Box textAlign="center" px={2}>
           <TranslatedLabel text="freedom.olexa.text" />
         </Box>
       </Center>
