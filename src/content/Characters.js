@@ -1,29 +1,31 @@
 import React from 'react'
-import { Center, Grid, GridItem, Stack } from '@chakra-ui/react'
+import { Center, Grid, GridItem, Image, Stack } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
 import TranslatedHeading from '../components/TranslatedHeading'
+import krian from '../images/bookCovers/krian.jpg'
+import olexa from '../images/bookCovers/olexa.jpg'
 
 const Characters = () => {
   const charsDetails = [
     {
       name: 'Krian Heart',
       description: 'o garoto virgem que sonha com o primeiro beijo.',
-      icon: <></>,
+      image: krian,
     },
     {
       name: 'Olexa, a Ampulheta',
       description: 'a garota mercenária que sonha com um mundo onde todos podem viver livres.',
-      icon: <></>,
+      image: olexa,
     },
     {
       name: 'Zacky Warmsoul',
       description: 'manhoso e malandro, esconde seus reais desejos de vingança.',
-      icon: <></>,
+      image: '',
     },
     {
       name: 'Havel Steam',
       description: 'o vespertino da estalagem, sente falta de sua mestra e planeja um dia reencontra-la.',
-      icon: <></>,
+      image: '',
     },
   ]
 
@@ -34,10 +36,12 @@ const Characters = () => {
       </Center>
       <Grid templateColumns={{ lg: 'repeat(2, 1fr)' }} fontSize={24}>
         {charsDetails.map((char) => (
-          <GridItem key={char.name} gap={2} m={5} textAlign="center">
-            {/* <Center>
-                <Image width={40} src={char.icon} />
-              </Center> */}
+          <GridItem key={char.name} m={10} textAlign="center">
+            {char.image && (
+              <Center>
+                <Image width={40} src={char.image} />
+              </Center>
+            )}
             <Center>
               <strong>
                 <TranslatedLabel props={{ fontSize: 26 }} text={char.name} />
