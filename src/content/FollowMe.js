@@ -7,7 +7,7 @@ import { FaAmazon, FaTwitter, FaYoutube } from 'react-icons/fa'
 const FollowMe = () => {
   return (
     <Center id="followMe" alignItems="center" backgroundColor="black" borderRadius={10} minHeight={410} width={['100vw', '80vw']} my={2} py={2}>
-      <Stack color="white" maxWidth="90%" fontSize={[23, 33]} height="100%" mx="auto">
+      <Stack color="white" maxWidth="90%" fontSize={{ sm: 33, md: 23, lg: 33 }} height="100%" mx="auto">
         <Stack direction={{ base: 'column', md: 'row' }}>
           <Stack width={300}>
             <Center>
