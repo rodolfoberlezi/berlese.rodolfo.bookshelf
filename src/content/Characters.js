@@ -9,23 +9,21 @@ const Characters = () => {
   const charsDetails = [
     {
       name: 'Krian Heart',
-      description: 'o garoto virgem que sonha com o primeiro beijo.',
+      description: 'characters.krian',
       image: krian,
     },
     {
-      name: 'Olexa, a Ampulheta',
-      description: 'a garota mercenária que sonha com um mundo onde todos podem viver livres.',
+      name: 'characters.olexa.name',
+      description: 'characters.olexa',
       image: olexa,
     },
     {
       name: 'Zacky Warmsoul',
-      description: 'manhoso e malandro, esconde seus reais desejos de vingança.',
-      image: '',
+      description: 'characters.zacky',
     },
     {
       name: 'Havel Steam',
-      description: 'o vespertino da estalagem, sente falta de sua mestra e planeja um dia reencontra-la.',
-      image: '',
+      description: 'characters.havel',
     },
   ]
 
@@ -54,9 +52,7 @@ const Characters = () => {
         ))}
       </Grid>
       <Center flexDirection="row" alignItems="center" textAlign="center" mx="auto" fontSize={24}>
-        e muitos outros mercenários em uma luta contra algozes na esperança de salvar as criaturas que vem de Astasy, o mundo exilado, o continente
-        das criaturas não humanas como fadas, elfos, anões, selvagens e demônios. Tudo isso, é claro, sem deixarem de cumprir com a realização de seus
-        próprios sonhos!
+        <TranslatedLabel text={'characters.more'} />
       </Center>
     </Stack>
   )
