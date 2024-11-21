@@ -8,7 +8,9 @@
     }
   },
   "bitcoin": {
-    "kindle": "https://www.amazon.com.br/dp/B09QY7QWM8"
+    "pt": {
+      "kindle": "https://www.amazon.com.br/dp/B09QY7QWM8"
+    }
   },
   "socialNetworks": {
     "amazon": "https://www.amazon.com.br/kindle-dbs/entity/author/B08ND3G5RY?ref_=dbs_p_ebk_r00_abau_000000",

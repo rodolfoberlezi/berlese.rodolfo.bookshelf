@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { graphql } from 'gatsby'
 import { Container } from '@chakra-ui/react'
-import { useTranslation } from 'gatsby-plugin-react-i18next'
+import { I18nextContext, useTranslation } from 'gatsby-plugin-react-i18next'
 // import Header from '../components/Header.js'
 import Menu from '../components/Menu/index.js'
 import Footer from '../components/Footer/index.js'
@@ -13,10 +13,12 @@ import TheSaga from '../content/TheSaga.js'
 import Characters from '../content/Characters.js'
 import Ratings from '../content/Ratings.js'
 import ActionButton from '../components/ActionButton.js'
+import { powerHeart } from '../utils/links.json'
 import '../styles/global.scss'
 
 const IndexPage = () => {
   useTranslation()
+  const { language } = useContext(I18nextContext)
 
   return (
     <>
@@ -27,9 +29,9 @@ const IndexPage = () => {
         <AuthorApresentation />
         <TheSaga />
         <Characters />
-        <ActionButton label={'button.knowmore'} />
+        <ActionButton label={'button.knowmore'} link={powerHeart[language].ph1Kindle} />
         <Ratings />
-        <ActionButton label={'button.verify'} />
+        <ActionButton label={'button.verify'} link={powerHeart[language].ph1Kindle} />
         <FollowMe />
         <NosceTeIpsum />
         <Footer />
