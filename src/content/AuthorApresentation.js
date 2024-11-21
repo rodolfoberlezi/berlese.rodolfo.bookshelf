@@ -1,7 +1,8 @@
 import React from 'react'
-import { Box, Center, Heading, Stack, Image } from '@chakra-ui/react'
+import { Center, Heading, Stack, Image } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
 import author from '../images/author/charuto.jpg'
+import TranslatedHeading from '../components/TranslatedHeading'
 
 const AuthorApresentation = () => {
   return (
@@ -10,15 +11,21 @@ const AuthorApresentation = () => {
         <Center>
           <Image borderRadius="10" maxW={250} mr={{ md: 8 }} src={author} alt={'Rodolfo Berlese photo'} />
         </Center>
-        <Stack justifyContent={'center'}>
-          <Heading variant="h4" mb={2.5}>
+        <Stack justifyContent={'center'} p={4}>
+          <Heading variant="h4" mb={2.5} fontFamily={'Cinzel'}>
             Rodolfo Berlese
+            <TranslatedHeading
+              props={{
+                fontSize: 18,
+              }}
+              text="who.am.i.values"
+            />
           </Heading>
-          <Stack fontSize={[13, 18]}>
-            <Box mb={1.5}>
-              <TranslatedLabel text="who.am.i.p1" />
-            </Box>
+          <Stack fontSize={[13, 18]} gap={5}>
+            <TranslatedLabel text="who.am.i.p1" />
             <TranslatedLabel text="who.am.i.p2" />
+            <TranslatedLabel text="who.am.i.p3" />
+            <TranslatedLabel text="who.am.i.p4" />
           </Stack>
         </Stack>
       </Stack>
