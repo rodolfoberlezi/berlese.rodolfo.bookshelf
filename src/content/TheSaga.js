@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Button, Center, Image, Link, Stack } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
 import TranslatedHeading from '../components/TranslatedHeading'
 import { powerHeart } from '../utils/links.json'
 import ph1CoverDetailed from '../images/bookCovers/bookCoverDetailed.jpg'
+import ph1CoverDetailedEn from '../images/bookCovers/bookCoverDetailed-En.jpg'
 import phLogoCor from '../images/power-heart/logo-ph-cor.png'
 import { amazonButtonColor } from '../utils/constants'
+import { I18nextContext } from 'gatsby-plugin-react-i18next'
 
 const AboutSaga = () => (
   <>
@@ -28,12 +30,14 @@ const AboutSaga = () => (
 )
 
 const TheSaga = () => {
+  const { language } = useContext(I18nextContext)
+
   const books = [
     {
       title: 'thesaga.ph1',
       launched: true,
-      link: powerHeart.ph1Kindle,
-      image: ph1CoverDetailed,
+      link: powerHeart[language].ph1Kindle,
+      image: language === 'pt' ? ph1CoverDetailed : ph1CoverDetailedEn,
     },
     {
       title: 'thesaga.ph2',
