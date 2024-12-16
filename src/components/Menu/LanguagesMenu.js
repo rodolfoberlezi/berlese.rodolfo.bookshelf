@@ -1,30 +1,39 @@
 import React from 'react'
-import { useI18next } from 'gatsby-plugin-react-i18next'
-import { Select, Center } from '@chakra-ui/react'
+import { Link, useI18next } from 'gatsby-plugin-react-i18next'
+import { Center } from '@chakra-ui/react'
 import { GrLanguage } from 'react-icons/gr'
-import TranslatedLabel from '../TranslatedLabel'
 
 const LanguagesMenu = () => {
-  const { languages, originalPath, changeLanguage } = useI18next()
-
-  const onChangeLanguage = (lng) => {
-    changeLanguage(lng, originalPath)
-  }
+  const { language, originalPath } = useI18next()
 
   return (
-    <Center direction="column">
-      <Select
+    <Center direction="column" gap={5} fontSize={14}>
+      {/* <Select
         minWidth={200}
-        placeholder={<TranslatedLabel text={'language.command'}></TranslatedLabel>}
+        placeholder={<TranslatedLabel text={'language.command'} />}
         icon={<GrLanguage />}
-        onChange={(event) => onChangeLanguage(event.target.value)}
+        onChange={(event) => {
+          event.preventDefault()
+          console.log(event.target.value)
+          onChangeLanguage(event.target.value)
+        }}
       >
         {languages.map((lng) => (
           <option key={lng} value={lng}>
             <TranslatedLabel text={lng}></TranslatedLabel>
           </option>
         ))}
-      </Select>
+      </Select> */}
+      {language === 'pt' ? (
+        <Link to={originalPath} language="en">
+          Switch to English
+        </Link>
+      ) : (
+        <Link to={originalPath} language="pt">
+          Traduzir para Português
+        </Link>
+      )}
+      <GrLanguage size={24} />
     </Center>
   )
 }

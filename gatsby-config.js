@@ -38,7 +38,7 @@ module.exports = {
         languages: [`pt`, `en`],
         defaultLanguage: `pt`,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
-        siteUrl: `http://www.rodolfoberlese.com.br`,
+        siteUrl: 'www.rodolfoberlese.com',
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
