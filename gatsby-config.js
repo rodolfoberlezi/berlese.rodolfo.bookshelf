@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `berlese.rodolfo.bookshelf`,
-    siteUrl: `http://www.rodolfoberlese.com.br`,
+    siteUrl: `www.rodolfoberlese.com`,
   },
   plugins: [
     'gatsby-plugin-sass',
