@@ -1,6 +1,5 @@
 import React from 'react'
 import { Center, Container, Flex, Image, Stack, Text } from '@chakra-ui/react'
-
 import bookEffect from '../images/bookCovers/bookWithEffects.png'
 import AmazonButtons from '../components/AmazonButtons'
 import TranslatedHeading from '../components/TranslatedHeading'
@@ -14,7 +13,7 @@ const HeroBanner = () => {
             <TranslatedHeading text="POWER HEART"></TranslatedHeading>
             <TranslatedHeading props={{ fontSize: '1.75rem' }} text={'Livro 1 - O Recomeço da Alma'}></TranslatedHeading>
             <Text position={'relative'}>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever
               since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </Text>
 
