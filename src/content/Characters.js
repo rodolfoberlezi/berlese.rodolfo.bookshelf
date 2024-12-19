@@ -51,7 +51,7 @@ const Characters = () => {
           </GridItem>
         ))}
       </Grid>
-      <Center flexDirection="row" alignItems="center" textAlign="center" mx="auto" fontSize={24}>
+      <Center flexDirection="row" alignItems="center" textAlign="center" mx="auto" fontSize={24} p={4}>
         <TranslatedLabel text={'characters.more'} />
       </Center>
     </Stack>

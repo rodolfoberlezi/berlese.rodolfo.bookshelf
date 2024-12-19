@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Button, Center, Image, Link, Stack } from '@chakra-ui/react'
+import { Button, Center, Grid, GridItem, Image, Link, Stack } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
 import TranslatedHeading from '../components/TranslatedHeading'
 import { powerHeart } from '../utils/links.json'
@@ -58,32 +58,42 @@ const TheSaga = () => {
   return (
     <>
       <AboutSaga />
-      <Stack id="books" width={{ lg: '80vw' }} minHeight={510} gap={10} mt={20} py={2} mx="auto">
+      <Stack id="books" width={['100vw', '80vw']} minHeight={510} gap={10} mt={20} py={2} mx="auto">
         <Stack mb={10}>
           <Center>
-            <TranslatedHeading props={{ fontSize: 42 }} text={'thesaga.title'} />
+            <TranslatedHeading props={{ fontSize: 36 }} text={'thesaga.title'} />
           </Center>
           <Center>
-            <TranslatedHeading props={{ fontSize: 56 }} text={'thesaga.name'} />
+            <TranslatedHeading props={{ fontSize: 48 }} text={'thesaga.name'} />
           </Center>
           <Center>
-            <TranslatedLabel props={{ fontSize: 26 }} text={'thesage.available'} />
+            <TranslatedLabel props={{ fontSize: 24 }} text={'thesage.available'} />
           </Center>
         </Stack>
-        <Center flexDirection={{ sm: 'column', lg: 'row' }} justifyContent="space-evenly">
+        <Grid templateColumns={{ lg: 'repeat(3, 1fr)' }}>
           {books.map((book) => {
             return (
-              <Stack key={book.title} gap={5} mb={{ sm: 20, lg: 0 }}>
-                <Center border={'solid'} borderColor={'black'}>
+              <GridItem key={book.title} m={5}>
+                <Center mb={5}>
                   {book.launched ? (
-                    <Image width={320} height={480} src={book.image} />
+                    <Image border={'solid'} borderColor={'black'} width={320} height={480} src={book.image} />
                   ) : (
-                    <Center width={320} height={480} background={'black'} color={'white'} textAlign={'center'} fontSize={24} fontWeight={600}>
+                    <Center
+                      width={320}
+                      height={480}
+                      background={'black'}
+                      color={'white'}
+                      textAlign={'center'}
+                      fontSize={24}
+                      fontWeight={600}
+                      border={'solid'}
+                      borderColor={'black'}
+                    >
                       <TranslatedLabel text={'thesaga.writing'} />
                     </Center>
                   )}
                 </Center>
-                <Center>
+                <Center mb={5}>
                   <strong>
                     <TranslatedLabel props={{ fontSize: 26 }} text={book.title} />
                   </strong>
@@ -110,10 +120,10 @@ const TheSaga = () => {
                     <TranslatedLabel text={getButtonLabel(book.launched)} />
                   </Button>
                 </Link>
-              </Stack>
+              </GridItem>
             )
           })}
-        </Center>
+        </Grid>
       </Stack>
     </>
   )
