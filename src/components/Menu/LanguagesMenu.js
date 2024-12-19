@@ -30,7 +30,7 @@ const LanguagesMenu = () => {
         </Link>
       ) : (
         <Link to={originalPath} language="pt">
-          Traduzir para Português
+          Site Português
         </Link>
       )}
       <GrLanguage size={24} />
