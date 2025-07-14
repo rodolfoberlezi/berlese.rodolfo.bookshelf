@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { graphql } from 'gatsby'
 import { Container } from '@chakra-ui/react'
 import { I18nextContext, useTranslation } from 'gatsby-plugin-react-i18next'
+import { SpeedInsights } from '@vercel/speed-insights/react';
 // import Header from '../components/Header.js'
 import Menu from '../components/Menu/index.js'
 import Footer from '../components/Footer/index.js'
@@ -35,6 +36,7 @@ const IndexPage = () => {
         <FollowMe />
         <NosceTeIpsum />
         <Footer />
+        <SpeedInsights />
       </Container>
     </>
   )
