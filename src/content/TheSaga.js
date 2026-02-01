@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Button, Center, Grid, GridItem, Image, Link, Stack } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
 import TranslatedHeading from '../components/TranslatedHeading'
-import { powerHeart } from '../utils/links.json'
+import links from '../utils/links.json'
 import ph1CoverDetailed from '../images/bookCovers/bookCoverDetailed.jpg'
 import ph1CoverDetailedEn from '../images/bookCovers/bookCoverDetailed-En.jpg'
 import phLogoCor from '../images/power-heart/logo-ph-cor.png'
@@ -31,6 +31,7 @@ const AboutSaga = () => (
 
 const TheSaga = () => {
   const { language } = useContext(I18nextContext)
+  const { powerHeart } = links
 
   const books = [
     {

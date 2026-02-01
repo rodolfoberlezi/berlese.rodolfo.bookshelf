@@ -1,9 +1,11 @@
 import React from 'react'
 import { Flex, Link, IconButton } from '@chakra-ui/react'
 import { FaAmazon, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { socialNetworks } from '../../utils/links.json'
+import links from '../../utils/links.json'
 
 const SocialNetworks = ({ directionFlow = 'row', sizeButton = 'lg', marginAround = '5' }) => {
+  const { socialNetworks } = links
+
   return (
     <Flex
       minH={{

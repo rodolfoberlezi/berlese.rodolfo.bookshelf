@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { graphql } from 'gatsby'
 import { Container } from '@chakra-ui/react'
 import { I18nextContext, useTranslation } from 'gatsby-plugin-react-i18next'
-import { SpeedInsights } from '@vercel/speed-insights/react';
+import { SpeedInsights } from '@vercel/speed-insights/react'
 // import Header from '../components/Header.js'
 import Menu from '../components/Menu/index.js'
 import Footer from '../components/Footer/index.js'
@@ -14,12 +14,13 @@ import TheSaga from '../content/TheSaga.js'
 import Characters from '../content/Characters.js'
 import Ratings from '../content/Ratings.js'
 import ActionButton from '../components/ActionButton.js'
-import { powerHeart } from '../utils/links.json'
+import links from '../utils/links.json'
 import '../styles/global.scss'
 
 const IndexPage = () => {
   useTranslation()
   const { language } = useContext(I18nextContext)
+  const { powerHeart } = links
 
   return (
     <>

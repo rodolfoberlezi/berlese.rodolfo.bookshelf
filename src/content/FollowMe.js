@@ -1,10 +1,12 @@
 import React from 'react'
 import { Center, Heading, Stack, Link, IconButton } from '@chakra-ui/react'
 import TranslatedLabel from '../components/TranslatedLabel'
-import { socialNetworks } from '../utils/links.json'
+import links from '../utils/links.json'
 import { FaAmazon, FaTwitter, FaYoutube } from 'react-icons/fa'
 
 const FollowMe = () => {
+  const { socialNetworks } = links
+
   return (
     <Center id="contact" backgroundColor="black" borderRadius={10} minHeight={410} width={['100vw', '80vw']} my={2} py={2}>
       <Stack color="white" maxWidth="90%" fontSize={{ sm: 33, md: 23, lg: 33 }} height="100%" mx="auto">
