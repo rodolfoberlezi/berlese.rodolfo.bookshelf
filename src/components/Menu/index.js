@@ -20,6 +20,7 @@ import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@ch
 import LanguagesMenu from './LanguagesMenu.js'
 import TranslatedLabel from '../TranslatedLabel.js'
 import rbLogo from '../../images/header/rb-circle.png'
+import { blog } from '../../utils/links.json'
 
 const Menu = () => {
   const { isOpen, onToggle } = useDisclosure()
@@ -72,12 +73,14 @@ const DesktopNav = () => {
               <Link
                 p={2}
                 href={navItem.href ?? '#'}
-                fontSize={'sm'}
+                target={navItem.target ?? undefined}
+                fontSize={'md'}
                 fontWeight={500}
-                color={linkColor}
+                color={linkColor}                
                 _hover={{
                   textDecoration: 'none',
                   color: linkHoverColor,
+                  fontWeight: 600
                 }}
               >
                 <TranslatedLabel text={navItem.label} />
@@ -164,7 +167,19 @@ const MobileNavItem = ({ label, children, href }) => {
         <Stack mt={2} pl={4} borderLeft={1} borderStyle={'solid'} borderColor={useColorModeValue('gray.200', 'gray.700')} align={'start'}>
           {children &&
             children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
+              <Link key={child.label}
+                py={2}
+                href={navItem.href ?? '#'}
+                target={navItem.target ?? undefined}
+                fontSize={'md'}
+                fontWeight={500}
+                color={linkColor}                
+                _hover={{
+                  textDecoration: 'none',
+                  color: linkHoverColor,
+                  fontWeight: 600
+                }}
+              >
                 {child.label}
               </Link>
             ))}
@@ -177,11 +192,11 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: 'menu.1',
-    href: '#about',
+    href: '/',
   },
   {
     label: 'menu.2',
-    href: '#books',
+    href: '/power-heart',
     // children: [
     //   {
     //     label: "sub.menu",
@@ -192,7 +207,12 @@ const NAV_ITEMS = [
   },
   {
     label: 'menu.3',
-    href: '#contact',
+    href: '/author',
+  },
+  {
+    label: 'menu.4',
+    href: blog.wordpress,
+    target: '_blank'
   },
 ]
 

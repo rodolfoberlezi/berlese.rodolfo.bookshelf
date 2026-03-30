@@ -22,7 +22,7 @@ const ActionButton = ({ link, label }) => {
   }
 
   return (
-    <Center mt={10} mb={20}>
+    <Center mt={5} mb={5}>
       <Link href={link} _hover={{ textDecoration: 'none' }} isExternal>
         <Button {...styleProps}>
           <TranslatedLabel props={{ as: 'span' }} text={label} />

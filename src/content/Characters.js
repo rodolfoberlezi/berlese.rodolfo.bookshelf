@@ -7,40 +7,26 @@ import olexa from '../images/bookCovers/olexa.jpg'
 
 const Characters = () => {
   const charsDetails = [
-    {
-      name: 'Krian Heart',
-      description: 'characters.krian',
-      image: krian,
-    },
-    {
-      name: 'characters.olexa.name',
-      description: 'characters.olexa',
-      image: olexa,
-    },
-    {
-      name: 'Zacky Warmsoul',
-      description: 'characters.zacky',
-    },
-    {
-      name: 'Havel Steam',
-      description: 'characters.havel',
-    },
+    { name: 'Krian Heart', description: 'characters.krian', image: krian },
+    { name: 'characters.olexa.name', description: 'characters.olexa', image: olexa },
+    { name: 'Zacky Warmsoul', description: 'characters.zacky' },
+    { name: 'Havel Steam', description: 'characters.havel' },
   ]
 
   return (
-    <Stack id="characters" width={['100vw', '80vw']} minHeight={410} gap={10} mt={40} py={2} mx="auto">
-      <Center mb={5}>
+    <Stack id="characters" width={['100vw', '80vw']} minHeight={410} gap={10} mt={5} py={2} mx="auto" borderTop={'solid'}>
+      <Center>
         <TranslatedHeading props={{ fontSize: 56 }} text={'characters.title'} />
       </Center>
       <Grid templateColumns={{ lg: 'repeat(2, 1fr)' }} fontSize={24}>
         {charsDetails.map((char) => (
-          <GridItem key={char.name} m={10} textAlign="center">
+          <GridItem key={char.name} m={5} textAlign="center">
             {char.image && (
               <Center>
                 <Image width={40} src={char.image} />
               </Center>
             )}
-            <Center>
+            <Center mt={2}>
               <strong>
                 <TranslatedLabel props={{ fontSize: 26 }} text={char.name} />
               </strong>

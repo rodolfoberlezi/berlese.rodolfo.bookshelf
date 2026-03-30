@@ -8,7 +8,6 @@ import Footer from '../components/Footer/index.js'
 import AuthorApresentation from '../content/AuthorApresentation.js'
 import NosceTeIpsum from '../content/NosceTeIpsum.js'
 import FollowMe from '../content/FollowMe.js'
-import TheSaga from '../content/TheSaga.js'
 import '../styles/global.scss'
 
 const IndexPage = () => {
@@ -19,9 +18,13 @@ const IndexPage = () => {
       <Menu />
       <Container maxW="container.full" p={0} bg={'white'} centerContent>
         <AuthorApresentation />
+
         <FollowMe />
+
         <NosceTeIpsum />
+
         <Footer />
+
         <SpeedInsights />
       </Container>
     </>

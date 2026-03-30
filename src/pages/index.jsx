@@ -28,15 +28,23 @@ const IndexPage = () => {
         <WhatIsFreedom />
 
         <TheSaga />
+
         <Characters />
+
         <ActionButton label={'button.knowmore'} link={powerHeart[language].ph1Kindle} />
+
         <Ratings />
+
         <ActionButton label={'button.verify'} link={powerHeart[language].ph1Kindle} />
 
         <AuthorApresentation />
+
         <FollowMe />
+
         <NosceTeIpsum />
+
         <Footer />
+        
         <SpeedInsights />
       </Container>
     </>

@@ -5,10 +5,8 @@ import { I18nextContext, useTranslation } from 'gatsby-plugin-react-i18next'
 import { SpeedInsights } from '@vercel/speed-insights/react'
 import Menu from '../components/Menu/index.js'
 import Footer from '../components/Footer/index.js'
-import AuthorApresentation from '../content/AuthorApresentation.js'
 import NosceTeIpsum from '../content/NosceTeIpsum.js'
-import FollowMe from '../content/FollowMe.js'
-import WhatIsFreedom from '../content/WhatIsFreedom.js'
+import AboutSaga from '../content/AboutSaga.js'
 import TheSaga from '../content/TheSaga.js'
 import Characters from '../content/Characters.js'
 import Ratings from '../content/Ratings.js'
@@ -25,16 +23,22 @@ const IndexPage = () => {
     <>
       <Menu />
       <Container maxW="container.full" p={0} bg={'white'} centerContent>
-        <WhatIsFreedom />
+        <AboutSaga />
 
         <TheSaga />
+
         <Characters />
+
         <ActionButton label={'button.knowmore'} link={powerHeart[language].ph1Kindle} />
+
         <Ratings />
+
         <ActionButton label={'button.verify'} link={powerHeart[language].ph1Kindle} />
 
         <NosceTeIpsum />
+
         <Footer />
+
         <SpeedInsights />
       </Container>
     </>

@@ -24,7 +24,7 @@ const AuthorApresentation = () => {
           <Stack fontSize={[13, 18]} gap={5}>
             <TranslatedLabel text="who.am.i.p1" />
             <TranslatedLabel text="who.am.i.p2" />
-            <TranslatedLabel text="who.am.i.p3" />
+            {/* <TranslatedLabel text="who.am.i.p3" /> */}
             <TranslatedLabel text="who.am.i.p4" />
           </Stack>
         </Stack>

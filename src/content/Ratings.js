@@ -6,28 +6,16 @@ import poster from '../images/bookCovers/poster.jpg'
 
 const Ratings = () => {
   const ratingsDetails = [
-    {
-      key: 'lorena',
-      name: 'Lorena',
-    },
-    {
-      key: 'junio',
-      name: 'Junio',
-    },
-    {
-      key: 'giuseppe',
-      name: 'Giuseppe',
-    },
-    {
-      key: 'mateus',
-      name: 'Mateus',
-    },
+    { key: 'lorena', name: 'Lorena' },
+    { key: 'junio', name: 'Junio' },
+    { key: 'giuseppe', name: 'Giuseppe' },
+    { key: 'mateus', name: 'Mateus' },
   ]
 
   return (
-    <Stack id="characters" width={['100vw', '80vw']} minHeight={410} gap={10} mt={20} py={2} mx="auto">
-      <Center mb={10} textAlign={'center'}>
-        <TranslatedHeading props={{ fontSize: 32 }} text={'rating.title'} />
+    <Stack id="characters" width={['100vw', '80vw']} minHeight={410} gap={10} mt={5} py={2} mx="auto" borderTop={'solid'}>
+      <Center textAlign={'center'}>
+        <TranslatedHeading props={{ fontSize: 36 }} text={'rating.title'} />
       </Center>
       <Grid templateColumns={{ lg: 'repeat(2, 1fr)' }}>
         {ratingsDetails.map((rate) => (

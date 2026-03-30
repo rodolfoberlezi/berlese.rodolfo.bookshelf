@@ -1,22 +1,20 @@
 import React from 'react'
-import phLogoCor from '../images/power-heart/logo-ph-cor.png'
+import { Center } from '@chakra-ui/react'
+import TranslatedHeading from '../components/TranslatedHeading'
 
 const AboutSaga = () => (
   <>
-    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
+    <Center maxWidth="90%" textAlign="center" mx={2} height="50vh">
       <TranslatedHeading props={{ fontSize: 42 }} text="aboutsaga.presenting" />
     </Center>
-    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
+    <Center maxWidth="90%" textAlign="center" mx={2} height="50vh">
       <TranslatedHeading props={{ fontSize: 42 }} text="aboutsaga.time" />
     </Center>
-    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh">
+    <Center maxWidth="90%" textAlign="center" mx={2} height="50vh">
       <TranslatedHeading props={{ fontSize: 42 }} text="aboutsaga.soul" />
     </Center>
-    <Center maxWidth="90%" textAlign="center" mx={2} height="90vh">
+    <Center maxWidth="90%" textAlign="center" mx={2} height="50vh" borderBottom={'solid'}>
       <TranslatedHeading props={{ fontSize: 42 }} text="aboutsaga.heart" />
-    </Center>
-    <Center maxWidth="90%" textAlign="center" mx={2} height="80vh" px={{ lg: 20 }} mb={{ lg: 20 }}>
-      <Image src={phLogoCor} />
     </Center>
   </>
 )
