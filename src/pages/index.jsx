@@ -9,11 +9,12 @@ import AuthorApresentation from '../content/AuthorApresentation.js'
 import NosceTeIpsum from '../content/NosceTeIpsum.js'
 import FollowMe from '../content/FollowMe.js'
 import WhatIsFreedom from '../content/WhatIsFreedom.js'
-import TheSaga from '../content/TheSaga.js'
+import PowerHeartBooks from '../content/PowerHeartBooks.js'
 import Characters from '../content/Characters.js'
 import Ratings from '../content/Ratings.js'
 import ActionButton from '../components/ActionButton.js'
 import links from '../utils/links.json'
+import SoulPowers from '../content/SoulPowers.js'
 import '../styles/global.scss'
 
 const IndexPage = () => {
@@ -27,9 +28,13 @@ const IndexPage = () => {
       <Container maxW="container.full" p={0} bg={'white'} centerContent>
         <WhatIsFreedom />
 
-        <TheSaga />
+        <PowerHeartBooks />
 
         <Characters />
+
+        <ActionButton label={'button.characters'} link={powerHeart[language].ph1Kindle} />
+
+        <SoulPowers />
 
         <ActionButton label={'button.knowmore'} link={powerHeart[language].ph1Kindle} />
 
@@ -44,7 +49,7 @@ const IndexPage = () => {
         <NosceTeIpsum />
 
         <Footer />
-        
+
         <SpeedInsights />
       </Container>
     </>

@@ -8,7 +8,7 @@ import ph1CoverDetailedEn from '../images/bookCovers/bookCoverDetailed-En.jpg'
 import { amazonButtonColor } from '../utils/constants'
 import { I18nextContext } from 'gatsby-plugin-react-i18next'
 
-const TheSaga = () => {
+const PowerHeartBooks = () => {
   const { language } = useContext(I18nextContext)
   const { powerHeart } = links
 
@@ -31,8 +31,8 @@ const TheSaga = () => {
           <Center>
             <TranslatedHeading props={{ fontSize: 56 }} text={'thesaga.name'} />
           </Center>
-          <Center>
-            <TranslatedLabel props={{ fontSize: 32 }} text={'thesage.available'} />
+          <Center textAlign={'center'}>
+            <TranslatedLabel props={{ fontSize: 32 }} text={'thesaga.available'} />
           </Center>
         </Stack>
         <Grid templateColumns={{ lg: 'repeat(2, 1fr)' }}>
@@ -41,7 +41,7 @@ const TheSaga = () => {
               <GridItem key={book.title} m={5}>
                 <Center mb={5}>
                   <strong>
-                    <TranslatedLabel props={{ fontSize: 26 }} text={book.title} />
+                    <TranslatedLabel props={{ fontSize: 26, textAlign: "center" }} text={book.title} />
                   </strong>
                 </Center>
                 <Center mb={5}>
@@ -59,7 +59,7 @@ const TheSaga = () => {
                       border={'solid'}
                       borderColor={'black'}
                     >
-                      <Stack>
+                      <Stack textAlign={"center"}>
                         <TranslatedLabel text={book.status} />
                         <span>{book.expected}</span>
                       </Stack>
@@ -93,4 +93,4 @@ const TheSaga = () => {
   )
 }
 
-export default TheSaga
+export default PowerHeartBooks

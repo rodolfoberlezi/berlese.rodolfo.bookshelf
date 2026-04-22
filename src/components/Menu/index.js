@@ -20,7 +20,7 @@ import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@ch
 import LanguagesMenu from './LanguagesMenu.js'
 import TranslatedLabel from '../TranslatedLabel.js'
 import rbLogo from '../../images/header/rb-circle.png'
-import { blog } from '../../utils/links.json'
+import { blog, socialNetworks } from '../../utils/links.json'
 
 const Menu = () => {
   const { isOpen, onToggle } = useDisclosure()
@@ -76,7 +76,7 @@ const DesktopNav = () => {
                 target={navItem.target ?? undefined}
                 fontSize={'md'}
                 fontWeight={500}
-                color={linkColor}                
+                color={linkColor}
                 _hover={{
                   textDecoration: 'none',
                   color: linkHoverColor,
@@ -142,7 +142,7 @@ const MobileNav = () => {
   )
 }
 
-const MobileNavItem = ({ label, children, href }) => {
+const MobileNavItem = ({ label, children, href, target }) => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
@@ -150,7 +150,8 @@ const MobileNavItem = ({ label, children, href }) => {
       <Flex
         py={2}
         as={Link}
-        href={children?.children ? href : '#'}
+        href={href}
+        target={target}
         justify={'space-between'}
         align={'center'}
         _hover={{
@@ -169,14 +170,14 @@ const MobileNavItem = ({ label, children, href }) => {
             children.map((child) => (
               <Link key={child.label}
                 py={2}
-                href={navItem.href ?? '#'}
-                target={navItem.target ?? undefined}
+                href={child.href}
+                target={child.target}
                 fontSize={'md'}
                 fontWeight={500}
-                color={linkColor}                
+                color={useColorModeValue('gray.600', 'gray.200')}
                 _hover={{
                   textDecoration: 'none',
-                  color: linkHoverColor,
+                  color: useColorModeValue('gray.800', 'white'),
                   fontWeight: 600
                 }}
               >
@@ -212,6 +213,11 @@ const NAV_ITEMS = [
   {
     label: 'menu.4',
     href: blog.wordpress,
+    target: '_blank'
+  },
+  {
+    label: 'menu.5',
+    href: socialNetworks.amazon,
     target: '_blank'
   },
 ]

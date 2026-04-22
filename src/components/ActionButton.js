@@ -6,9 +6,11 @@ import { amazonButtonColor } from '../utils/constants'
 const ActionButton = ({ link, label }) => {
   const styleProps = {
     bg: amazonButtonColor,
-    p: 10,
+    p: [5, 10],
     width: '100%',
-    fontSize: 32,
+    maxWidth: [340, "100%"],
+    height: "auto",
+    fontSize: [21, 32],
     color: 'black',
     border: 3,
     borderRadius: 10,
@@ -19,13 +21,14 @@ const ActionButton = ({ link, label }) => {
       bg: 'orange.500',
       transform: 'translateY(-2px)',
     },
+
   }
 
   return (
     <Center mt={5} mb={5}>
       <Link href={link} _hover={{ textDecoration: 'none' }} isExternal>
         <Button {...styleProps}>
-          <TranslatedLabel props={{ as: 'span' }} text={label} />
+          <TranslatedLabel props={{ as: 'span', }} text={label} />
         </Button>
       </Link>
     </Center>
